@@ -1,0 +1,133 @@
+.counter-wrapper {
+    padding: 140px 80px;
+    @include flex;
+    justify-content: space-between;
+    max-width: 1620px;
+    background-color: $bg-color;
+    
+
+    .counter-items {
+        
+
+        .content {
+
+            h2 {
+                font-size: 80px;
+                font-weight: 700;
+                color: $theme-color;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.counter-section {
+    position: relative;
+    z-index: 9;
+
+    &::before {
+        @include before;
+        background-color: $header-color;
+        z-index: -1;
+        height: 50%;
+    }
+
+    .line-shape {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.vedio-area {
+    padding: 300px 0;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.play-btn {
+    .video-btn {
+        width: 160px;
+        height: 110px;
+        line-height: 110px;
+        text-align: center;
+        background-color: $white;
+        color: $header-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%,-50%);
+    }
+}
+ 
+.cta-wrapper {
+
+
+    .cta-content {
+        position: relative;
+        z-index: 9;
+        
+        h2 {
+            font-size: 80px;
+            color: $white;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $white;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+    }
+
+    .cta-image {
+        position: relative;
+        z-index: 9;
+
+        img {
+            @include imgw;
+        }
+    }
+}
+
+.cta-section {
+    position: relative;
+
+    &::before {
+        @include before;
+        background-color: $theme-color;
+        width: 83.9%;
+        left: -6px;
+        z-index: 1;
+    }
+
+    &::after {
+        @include before;
+        background-color: $header-color;
+        top: 50%;
+    }
+}
+
+.counter-impact-items {
+    background-color: $white;
+    padding: 44px 36px;
+    position: relative;
+
+    h4 {
+        font-weight: 400;
+        color: $text-color;
+        position: absolute;
+        top: 44px;
+        right: 36px;
+    }
+
+    h5 {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 80px;
+        color: $theme-color;
+    }
+}

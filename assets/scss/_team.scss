@@ -1,0 +1,98 @@
+.team-box-items {
+    margin-top: 30px;
+    position: relative;
+
+    .team-image {
+        position: relative;
+        z-index: 9;
+
+        img {
+            @include imgw;
+        }
+        
+        .social-profile {
+            position: absolute;
+            right: 34px;
+            bottom: -20px;
+            content: "";
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            z-index: 2;
+            display: inline-block;
+            overflow: hidden;
+            cursor: pointer;
+
+            ul {
+                transform: translateY(100px);
+                transition: all 0.6s ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+                z-index: -1;
+
+                li {
+                    a {
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        text-align: center;
+                        display: block;
+                        background: $white;
+                        color: $header-color;
+                        -webkit-transition: all .4s ease-in-out;
+                        transition: all .4s ease-in-out;
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            background-color: $theme-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .plus-btn {
+                z-index: 2;
+                cursor: pointer;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                display: inline-block;
+                background: $theme-color;
+                color: $white;
+                -webkit-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: $theme-color;
+                }
+            }
+
+            &:hover {
+                ul {
+                    transform: translateY(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .team-content {
+        margin-top: 28px;
+
+        h3 {
+           font-weight: 900;
+           margin-bottom: 5px;
+
+           a {
+            color: $header-color;
+           }
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}

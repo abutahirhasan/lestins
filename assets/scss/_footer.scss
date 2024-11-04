@@ -1,0 +1,196 @@
+.footer-widget-wrapper {
+    padding: 70px 0 100px;
+
+    .single-footer-widget {
+        margin-top: 30px;
+
+        .widget-head {
+            margin-bottom: 30px;
+
+            h3 {
+                color: $white;
+                font-size: 24px;
+            }
+        }
+
+        .footer-content {
+
+            p {
+                font-size: 20px;
+                color: #BBBFCB;
+            }
+
+            .social-icon {
+                @include flex;
+                gap: 10px;
+                margin-top: 30px;
+               
+                a {
+                    width: 52px;
+                    height: 52px;
+                    line-height: 52px;
+                    text-align: center;
+                    font-size: 16px;
+                    display: block;
+                    background: transparent;
+                    color:  $white;
+                    border: 1px solid #32353F;
+                    -webkit-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+                    text-align: center;
+    
+                    &:hover {
+                        background-color: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+
+            .footer-input {
+                position: relative;
+                margin-top: 30px;
+                @include flex;
+                gap: 12px;
+
+                input {
+                    background: $white;
+                    border: none;
+                    outline: none;
+                    padding: 18px 20px;
+                    width: 100%;
+                    color: #1B1F2A;
+                    font-weight: 400;
+
+                    &::placeholder {
+                        color: #1B1F2A;
+                    }
+                }
+
+                .newsletter-btn {
+                    padding: 18px 20px;
+                    background-color: $theme-color;
+                    color: $white;
+                    text-align: center;
+                    @include transition;
+
+                    i {
+                        font-size: 24px;
+                    }
+
+                    &:hover {
+                        background-color: $white;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+
+        .list-items {
+
+            li {
+                font-size: 20px;
+                @include transition;
+
+                a {
+                    color: #BBBFCB;
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+
+                &:hover {
+                    margin-left: 5px;
+
+                    a {
+                        color: $white;
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+
+        .contact-list {
+            li {
+                color: #BBBFCB; 
+
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    color: #BBBFCB;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid #32353F;
+    padding: 36px 0;
+
+    .footer-bottom-wrapper {
+        @include flex;
+        justify-content: space-between;
+
+        p {
+            font-size: 20px;
+            color: #BBBFCB;
+        }
+
+        .social-icon {
+            @include flex;
+            gap: 15px;
+           
+            a {
+                width: 52px;
+                height: 52px;
+                line-height: 52px;
+                text-align: center;
+                font-size: 16px;
+                display: block;
+                background: transparent;
+                color:  $white;
+                border: 1px solid #32353F;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                text-align: center;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+
+        .footer-menu {
+            @include flex;
+            gap: 20px;
+
+            @include breakpoint (max-sm){
+                flex-wrap: wrap;
+            }
+
+            li {
+                font-size: 20px;
+
+                a {
+                    color: #BBBFCB;
+                    background-image: linear-gradient($theme-color,$theme-color);
+                    background-position: 0 95%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    display: inline-block;
+                    @include transition;
+                    font-weight: 400;
+
+                    &:hover {
+                        background-size: 100% 1px;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
