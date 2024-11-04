@@ -89,7 +89,7 @@ CSS TABLE OF CONTENTS
 
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
-			speed: 1500,
+			speed: 3500,
 			loop: true,
 			slidesPerView: 1,
 			autoplay: true,

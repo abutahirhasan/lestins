@@ -1,5 +1,5 @@
 .hero-1 {
-	padding: 185px 0 185px;
+	padding: 260px 0 185px;
 	position: relative;
 
 	.hero-bg {
@@ -37,7 +37,7 @@
 		transform: translateY(-150px);
 
 		h1 {
-			margin-bottom: 15px;
+			margin-bottom: 30px;
 			font-size: 50px;
 			font-weight: 800;
 			color: $white;
@@ -48,51 +48,81 @@
 				display: block;
 			}
 		}
-        .listing-search-form{
-            padding: 20px 20px;
-            border-radius: 10px;
-            background: url(../../assets/img/hero/search-bg.png) no-repeat center center;
-            background-size: cover;
-            .search-wrap {
-                background: $white;
-                padding: 20px 20px;
-                border-radius: 5px;
-                width: 100%;
-                margin: 0 auto;
-                -webkit-box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.1);
-                box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.1);
-                .search-form-main{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    input{
-                        border: unset;
-                        border-radius: 0;
-                        font-size: 16px;
-                        color: $text-color;
-                    }
-                    ::placeholder{
-                        color: $text-color;
-                    }
-                    .search-first{
-                        width: 285px;
-                    }
+		.listing-search-form {
+			padding: 20px 20px;
+			margin-bottom: 30px;
+			border-radius: 10px;
+			background: url(../../assets/img/hero/search-bg.png) no-repeat center
+				center;
+			background-size: cover;
+			.search-wrap {
+				background: $white;
+				padding: 20px 20px;
+				border-radius: 5px;
+				width: 100%;
+				margin: 0 auto;
+				-webkit-box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.1);
+				box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.1);
+				.search-form-main {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					input {
+						border: unset;
+						border-radius: 0;
+						font-size: 16px;
+						color: $text-color;
+					}
+					::placeholder {
+						color: $text-color;
+					}
+					.search-first {
+						width: 285px;
+					}
+				}
+				.category-select {
+					width: 285px;
+					border-left: 1px solid rgb(213, 213, 213);
+					padding-left: 40px;
+				}
+				.nice-select {
+					border-radius: 0;
+					.current {
+						font-size: 14px;
+						font-weight: 400;
+						color: $text-color;
+					}
+				}
+			}
+		}
+		.browse-hilisht {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+			.b-hilisht-text {
+				font-size: 16px;
+				font-weight: 600;
+				color: $white;
+			}
+			.b-hilisht-item {
+                background: #FFFFFF33;
+				border-radius: 5px;
+				padding: 2px 16px;
+				color: #fff;
+				font-size: 12px;
+				font-weight: 700;
+				-webkit-transition: all 0.35s;
+				transition: all 0.35s;
+                &:hover{
+                    cursor: pointer;
                 }
-                .category-select{
-                    width: 285px;
-                    border-left: 1px solid rgb(213, 213, 213);
-                    padding-left: 40px;
-                }
-                .nice-select{
-                    border-radius: 0;
-                    .current{
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: $text-color;
-                    }
-                }
+			}
+            .arrow-ele{
+                position: absolute;
+                top: 100%;
+                left: 160px;
             }
-        }
+		}
 	}
 
 	.hero-button {
