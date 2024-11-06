@@ -4,21 +4,14 @@
 .section-title{
 	position: relative;
 	z-index: 99;
-	margin-bottom: 30px;
-	//margin-top: -5px;
-
-	@include breakpoint (max-md){
-		margin-bottom: 0;
-	}
-
 	span {
 		display: inline-block;
-		font-size: 18px;
+		font-size: 14px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
 		font-weight: 700;
 		line-height: 1;
-		text-transform: uppercase;
-		color: $header-color;
-		margin-bottom: 12px;
+		color: $theme-color;
 	}
 }
 
@@ -57,7 +50,7 @@
 
 
 .section-padding {
-	padding: 140px 0;
+	padding: 120px 0;
 
 	@include breakpoint(max-xl){
 		padding: 100px 0;
@@ -68,4 +61,17 @@
 	}
 }
 
+
+.mb-60{
+	margin-bottom: 55px;
+	@include breakpoint(max-xl){
+		margin-bottom: 45px;
+	}
+	@include breakpoint(max-lg){
+		margin-bottom: 40px;
+	}
+	@include breakpoint(max-md){
+		margin-bottom: 35px;
+	}
+}
 //>>>>> Basic Css End <<<<<//

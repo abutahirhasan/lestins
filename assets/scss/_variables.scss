@@ -35,3 +35,106 @@ $cmn-border: var(--cmn-border);
 $body-bg: var(--body-bg);
 $bg-color: var(--bg);
 $shadow: var(--box-shadow);
+
+
+.black-clr{
+	color: $black;
+}
+.black-bg{
+	background: $black;
+}
+.black-pure-clr{
+	color: $black-pure;
+}
+.black-pure-bg{
+	background: $black-pure;
+}
+.white-clr{
+	color: $white;
+}
+.white-bg{
+	background: $white;
+}
+.theme-clr{
+	color: $theme-color;
+}
+.theme-bg{
+	background: $theme-color;
+}
+.theme2-clr{
+	color: $theme-color-2;
+}
+.theme2-bg{
+	background: $theme-color-2;
+}
+.theme3-clr{
+	color: $theme-color-3;
+}
+.theme3-bg{
+	background: $theme-color-3;
+}
+.ratting-clr{
+	color: $ratting;
+}
+.ratting-bg{
+	background: $ratting;
+}
+.text-clr{
+	color: $text-color;
+}
+.text-bg{
+	background: $text-color;
+}
+.text2-clr{
+	color: $text-color-2;
+}
+.text2-bg{
+	background: $text-color-2;
+}
+.bg-clr{
+	color: $bg-color;
+}
+.bg-bg{
+	background: $bg-color;
+}
+.border-clr{
+	color: $border-color;
+}
+.border-bg{
+	background: $border-color;
+}
+.cus-border{
+	border: 1px solid $border-color;
+}
+.border-bg{
+	background: $border-color;
+}
+.cmn-border-clr{
+	color: $cmn-border;
+}
+.cmn-border{
+	border: 1px solid $cmn-border;
+}
+.cmn-border-bg{
+	background: $cmn-border;
+}
+
+//Font Size 
+.fs-12{
+	font-size: 12px;
+}
+.fs-14{
+	font-size: 14px;
+}
+.fs-16{
+	font-size: 16px;
+}
+.fs-18{
+	font-size: 18px;
+}
+
+
+//Font Weight
+.fw-500{
+	font-weight: 500;
+}
