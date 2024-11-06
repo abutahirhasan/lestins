@@ -1,12 +1,14 @@
 :root {
 	--body: #fff;
 	--black: #11161f;
+	--black-pure: #000;
 	--white: #fff;
 	--theme: #e90b35;
 	--theme2: #35c54c;
 	--theme3: #59aec2;
 	--header: #11161f;
 	--header2: #161616;
+	--cmn-border: #838383;
 	--ratting: #febb02;
 	--text: #787878;
 	--text2: #f5f5f5;
@@ -18,6 +20,7 @@
 
 // Theme Color - Defualt Colors
 $black: var(--black);
+$black-pure: var(--black-pure);
 $white: var(--white);
 $theme-color: var(--theme);
 $theme-color-2: var(--theme2);
@@ -28,6 +31,7 @@ $text-color-2: var(--text2);
 $header-color: var(--header);
 $header-color-2: var(--header2);
 $border-color: var(--border);
+$cmn-border: var(--cmn-border);
 $body-bg: var(--body-bg);
 $bg-color: var(--bg);
 $shadow: var(--box-shadow);
