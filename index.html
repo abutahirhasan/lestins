@@ -41,7 +41,7 @@
         </button> -->
 
     <!-- Header Top Section Start -->
-    <div class="header-top-section d-lg-block d-none overflow-hidden">
+    <div class="header-top-section d-md-block d-none overflow-hidden">
         <div class="container">
             <div class="header-top-wrapper">
                 <ul class="contact-list">
@@ -54,11 +54,20 @@
                         <a href="#" class="link">+92 (8800) 6830</a>
                     </li>
                 </ul>
-                <div class="social-wrapper d-flex align-items-center">
-                    <a href="#" class=" black"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class=" black"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class=" black"><i class="fa-brands fa-x"></i></a>
-                    <a href="#" class=" black"><i class="fab fa-facebook-f"></i></a>
+                <div class="d-flex align-items-center gap-4">
+                    <div class="social-related d-flex align-items-center gap-2">
+                        <a href="#">About</a>
+                        <span>/</span>
+                        <a href="#">My Account</a>
+                        <span>/</span>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="social-wrapper d-flex align-items-center gap-xl-4 gap-3">
+                        <a href="#" class=" black"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class=" black"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class=" black"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class=" black"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,7 +243,6 @@
                                                 <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li>
-                                        
                                         <li>
                                             <a href="contact.html">Contact</a>
                                         </li>
@@ -242,26 +250,51 @@
                                 </nav>
                             </div>
                         </div>
-                        <a href="#0" class="search-trigger search-icon d-xl-none d-block"><i
-                                class="fal fa-search"></i></a>
+                        <div class="custom-dropdown position-relative d-lg-none d-block">
+                            <button class="dropdown-button pe-2">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </button>
+                            <div class="dropdown-content p-3">
+                                <a href="#" class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-user"></i> Login
+                                </a>
+                                <a href="#" class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-user-plus"></i> Register
+                                </a>
+                            </div>
+                        </div>
                         <div class="header__hamburger d-xl-none my-auto">
                             <div class="sidebar__toggle">
-                                <img src="assets/img/icon/menu.png" alt="icon">
+                                <i class="fa-solid fa-bars-staggered text-white"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="header-help d-lg-flex d-none align-items-center gap-xxl-3 gap-2">
-                        <div class="user-dropdown">
-                            <i class="fa-regular fa-circle-user"></i>
+                    <div class="header-help d-lg-flex d-none align-items-center gap-4">
+                        <div class="custom-dropdown position-relative">
+                            <button class="dropdown-button">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </button>
+                            <div class="dropdown-content p-3">
+                                <a href="#" class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-user"></i> Login
+                                </a>
+                                <a href="#" class="d-flex align-items-center gap-2">
+                                   <i class="fa-solid fa-user-plus"></i> Register
+                                </a>
+                            </div>
                         </div>
-                        <button type="button" class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                            <i class="fa-solid fa-magnifying-glass"></i> Search
+                        <button type="button" class="theme-btn custom-header-btn rounded-2 fw-normal text-capitalize gap-1 py-0 px-0">
+                            <span class="plus d-center"><i class="fa-solid fa-plus"></i></span> <span class="texts">Add a Listing</span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+
+
+    
 
 
     <!-- Hero section start -->
@@ -399,6 +432,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- About section start -->
     <section class="about-section section-bg section-padding fix">

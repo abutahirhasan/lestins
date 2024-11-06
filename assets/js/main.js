@@ -409,5 +409,33 @@ CSS TABLE OF CONTENTS
 		});
 	}
 
+	//Custom Dropdown 
+	const dropdownButtons = document.querySelectorAll(".dropdown-button");
+
+	dropdownButtons.forEach((button) => {
+		button.addEventListener("click", (event) => {
+			// Toggle the dropdown content for the clicked button
+			const dropdownContent = button.nextElementSibling;
+			dropdownContent.classList.toggle("show");
+
+			// Close other open dropdowns
+			document.querySelectorAll(".dropdown-content").forEach((content) => {
+				if (content !== dropdownContent) {
+					content.classList.remove("show");
+				}
+			});
+
+			// Stop event from propagating to the window click listener
+			event.stopPropagation();
+		});
+	});
+
+	// Close dropdowns when clicking outside
+	window.addEventListener("click", () => {
+		document.querySelectorAll(".dropdown-content").forEach((content) => {
+			content.classList.remove("show");
+		});
+	});
+
 	loader();
 })(jQuery); // End jQuery

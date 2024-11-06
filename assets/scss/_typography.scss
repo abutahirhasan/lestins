@@ -59,13 +59,13 @@ h6 {
 }
 
 h1 {
-	font-size: 100px;
+	font-size: 96px;
 	font-weight: 900;
 	line-height: 100%;
 }
 
 h2 {
-	font-size: 50px;
+	font-size: 48px;
 	line-height: 120%;
 	font-weight: 900;
 
@@ -86,6 +86,22 @@ h2 {
 }
 
 h3 {
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 115%;
+
+	@include breakpoint(max-xl) {
+		font-size: 29px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 26px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 24px;
+	}
+}
+
+h4 {
 	font-size: 24px;
 	font-weight: 900;
 	line-height: 115%;
@@ -95,18 +111,6 @@ h3 {
 	}
 	@include breakpoint(max-md) {
 		font-size: 20px;
-	}
-}
-
-h4 {
-	font-size: 22px;
-	font-weight: 700;
-	line-height: 145%;
-	@include breakpoint(max-lg) {
-		font-size: 20px;
-	}
-	@include breakpoint(max-md) {
-		font-size: 18px;
 	}
 }
 
@@ -143,4 +147,12 @@ p {
 span {
 	margin: 0px;
 	@include transition;
+}
+
+
+
+.d-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
