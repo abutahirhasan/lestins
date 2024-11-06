@@ -93,6 +93,7 @@ CSS TABLE OF CONTENTS
 			loop: true,
 			slidesPerView: 1,
 			autoplay: true,
+			simulateTouch: false,
 			effect: "fade",
 			breakpoints: {
 				1600: {
