@@ -1,357 +1,76 @@
-.project-wrapper {
-    margin-right: -62%;
-    position: relative;
-
-    .project-card-items {
-        position: relative;
-        margin-top: 30px;
-
-        .project-image {
-            position: relative;
-            @include transition;
-
-            img {
-                @include imgw;
-            }
-            .icon {
-                position: absolute;
-                right: 4%;
-                top: 4%;
-                font-size: 30px;
-                transform: rotate(-45deg);
-                z-index: 9;
-                color: $white;
-                visibility: hidden;
-                opacity: 0;
-                @include transition;
-            }
-
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 0;
-                visibility: hidden;
-                transform: scale(.5);
-                transition: 0.5s all ease;
-                background: rgba(255, 96, 47, 0.70);
-            }
-        }
-    
-        .project-content {
-            margin-top: 30px;
-    
-            h3 {
-                font-size: 40px;
-
-                a {
-                    @include transition;
-
-                    &:hover {
-                        color: $theme-color;
-                    }
-                }
-            }
-    
-            span {
-                font-size: 20px;
-                display: inline-block;
-                margin-top: 5px;
-                color: #BBBFCB;
-            }
-        }
-
-        &:hover {
-            .project-image {
-
-                .icon {
-                    opacity: 1;
-                    visibility: visible;
-                }
-
-               &::after {
-                opacity: 0.6;
-                visibility: visible;
-                transform: scale(1);
-               }
-            }
-        }
-    }
-
-    .array-button {
-        @include flex;
-        gap: 10px;
-
-        .array-prev {
-            height: 64px;
-            padding: 19px 32px;
-            background: #2D313B;
-
-            i {
-                color: $white;
-            }
-        }
-    }
+//Offer Section
+.offer-thumb-area {
+	.theme-line {
+		position: absolute;
+		bottom: 0;
+		right: -0px;
+		z-index: -1;
+		animation: leftr 2s linear infinite;
+	}
+	@include breakpoint(max-xxl) {
+		.thumb1,
+		.thumb {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+			.theme-line {
+				display: none;
+			}
+		}
+		.thumb {
+			max-width: 300px;
+		}
+	}
+}
+.offer-content {
+	.theme-btn {
+		background: $black;
+	}
+	.connect-line {
+		background-color: rgb(213, 213, 213);
+		height: 60px;
+		width: 1px;
+	}
+	.offer-condition-wrap {
+		display: grid;
+		gap: 24px;
+		margin: 36px 0;
+		.offer-connection {
+			gap: 30px;
+			.sty-title {
+				font-size: 20px;
+				font-weight: 800;
+				color: $black;
+			}
+			.icon {
+				width: 55px;
+				height: 55px;
+				min-width: 55px;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.connect-line {
+			display: none;
+		}
+		.offer-condition-wrap {
+			gap: 18px;
+			margin: 28px 0;
+			.offer-connection {
+				gap: 8px 20px;
+                flex-wrap: wrap;
+				.sty-title {
+					font-size: 18px;
+				}
+				.icon {
+					width: 40px;
+					height: 40px;
+					min-width: 40px;
+				}
+			}
+		}
+	}
 }
 
-
-.project-card-items-2 {
-    position: relative;
-    margin-top: 30px;
-
-    .project-image {
-        position: relative;
-        @include transition;
-        overflow: hidden;
-
-        img {
-            @include imgw;
-        }
-        .icon {
-            position: absolute;
-            right: 4%;
-            top: 4%;
-            font-size: 30px;
-            transform: rotate(-45deg);
-            z-index: 99;
-            color: $white;
-            visibility: hidden;
-            opacity: 0;
-            @include transition;
-        }
-
-        &::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            visibility: hidden;
-            transform: scale(.5);
-            transition: 0.5s all ease;
-            background: rgba(255, 96, 47, 0.70);
-        }
-
-        .project-content {
-            position: absolute;
-            left: 0;
-            bottom: -150px;
-            padding: 32px 0px;
-            right: 100px;
-            background: $white;
-            z-index: 9;
-            opacity: 0;
-            visibility: hidden;
-            @include transition;
-
-            h3 {
-    
-                a {
-                    color: $header-color;
-                    @include transition;
-    
-                    &:hover {
-                        color: $theme-color;
-                    }
-                }
-            }
-    
-            span {
-                font-size: 20px;
-                display: inline-block;
-                margin-top: 5px;
-                color: $text-color;
-            }
-        }
-    }
-
-    &:hover {
-        .project-image {
-
-            .icon {
-                opacity: 1;
-                visibility: visible;
-            }
-
-           &::after {
-                opacity: 0.6;
-                visibility: visible;
-                transform: scale(1);
-           }
-
-           .project-content {
-               bottom: 0;
-               opacity: 1;
-               visibility: visible;
-           }
-        }
-    }
-}
-
-.project-wrapper-2 {
-    margin-left: -100px;
-    margin-right: -100px;
-    
-    .project-box-items {
-        position: relative;
-        margin-top: 30px;
-
-        .project-image {
-            position: relative;
-            @include transition;
-
-            img {
-                @include imgw;
-            }
-
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 0;
-                visibility: hidden;
-                transform: scale(.5);
-                transition: 0.5s all ease;
-                background: rgba(255, 96, 47, 0.70);
-            }
-
-            .icon {
-                position: absolute;
-                right: 4%;
-                top: 4%;
-                font-size: 30px;
-                transform: rotate(-45deg);
-                z-index: 9;
-                color: $white;
-                visibility: hidden;
-                opacity: 0;
-                @include transition;
-            }
-        }
-
-        .project-content {
-            margin-top: 25px;
-
-            h3 {
-                margin-bottom: 5px;
-
-                a {
-                    @include transition;
-                    color: $header-color;
-
-                    &:hover {
-                        color: $theme-color;
-                    }
-                }
-            }
-
-            p {
-                font-size: 20px;
-            }
-        }
-
-        &:hover {
-            .project-image {
-
-                .icon {
-                    opacity: 1;
-                    visibility: visible;
-                }
-
-               &::after {
-                opacity: 0.6;
-                visibility: visible;
-                transform: scale(1);
-               }
-            }
-        }
-    }
-}
-
-.project-details-wrapper {
-
-    .details-image {
-        img {
-            @include imgw;
-        }
-    }
-
-    .details-content {
-        margin-top: 80px;
-
-        h2 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-
-        .vedio-image {
-            position: relative;
-            margin-top: 30px;
-
-            img {
-                @include imgw;
-            }
-
-            .play-btn {
-                position: absolute;
-                top: 50%;
-                text-align: center;
-                left: 50%;
-                transform: translate(-50%, -50%);
-
-                .video-btn {
-                    width: 160px;
-                    height: 110px;
-                    line-height: 110px;
-                    text-align: center;
-                    background-color: $white;
-                    color: $header-color;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    font-size: 30px;
-                    transform: translate(-50%,-50%);
-                }
-            }
-        }
-
-        p {
-            &.style-1 {
-                border-bottom: 1px solid $border-color;
-                padding-bottom: 50px;
-                margin-bottom: 50px;
-            }
-        }
-
-        .details-list {
-            margin-top: 30px;
-            border-bottom: 1px solid $border-color;
-            padding-bottom: 50px;
-            margin-bottom: 50px;
-
-            li {
-                color: $header-color;
-                font-size: 18px;
-                font-weight: 700;
-                text-transform: uppercase;
-
-                &:not(:last-child) {
-                    margin-bottom: 14px;
-                }
-
-                i {
-                    color: $header-color;
-                    margin-right: 5px;
-                }
-            }
-        }
-    }
-}
+//Offer Section

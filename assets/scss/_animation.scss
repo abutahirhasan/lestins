@@ -238,3 +238,15 @@
         width: 0;
     }
 }
+
+
+@keyframes updown {
+	50%{
+		transform: translateY(10px);
+	}
+}
+@keyframes leftr {
+	50%{
+		transform: translateX(7px);
+	}
+}
