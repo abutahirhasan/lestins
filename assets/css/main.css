@@ -22,6 +22,7 @@ Version: 1.0.0
   --text: #787878;
   --text2: #f5f5f5;
   --text3: #e2dfeb;
+  --indef: #d5d5d5;
   --border: #e2dfeb;
   --bg: #e2dfeb;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
@@ -81,6 +82,14 @@ Version: 1.0.0
 
 .ratting-bg {
   background: var(--ratting);
+}
+
+.indef-clr {
+  color: var(--indef);
+}
+
+.indef-bg {
+  background: var(--indef);
 }
 
 .text-clr {
@@ -3456,6 +3465,13 @@ span {
   }
 }
 
+.business-section {
+  position: relative;
+  z-index: 1;
+  background: url(../../assets/img/element/business-bg.png) no-repeat center center;
+  background-size: cover;
+}
+
 .business-single {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
@@ -3481,12 +3497,42 @@ span {
 .business-single .news-image .mike-hardson {
   position: absolute;
   left: 25px;
-  bottom: 10px;
+  bottom: 20px;
 }
 .business-single .news-image .mike-hardson img {
   width: 32px;
   height: 32px;
   object-fit: contain;
+}
+.business-single .business-content .review-area .re-line {
+  width: 1px;
+  background: var(--indef);
+  height: 16px;
+}
+.business-single .business-content .business-info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.business-single .business-content .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(213, 213, 213);
+}
+.business-single .business-content .form-info button {
+  width: 33px;
+  height: 33px;
+  background-color: rgb(245, 245, 245);
+  transition: all 0.5s;
+}
+.business-single .business-content .form-info button:hover {
+  background: var(--theme);
+}
+.business-single .business-content .form-info button:hover img {
+  filter: brightness(25);
+}
+.business-single .business-content .form-info button:hover i {
+  color: var(--white);
 }
 .business-single:hover .news-image img {
   transform: scale(1.1);

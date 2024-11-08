@@ -13,6 +13,7 @@
 	--text: #787878;
 	--text2: #f5f5f5;
 	--text3: #e2dfeb;
+	--indef: #d5d5d5;
 	--border: #e2dfeb;
 	--bg: #e2dfeb;
 	--box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
@@ -28,6 +29,7 @@ $theme-color-3: var(--theme3);
 $ratting: var(--ratting);
 $text-color: var(--text);
 $text-color-2: var(--text2);
+$indef: var(--indef);
 $header-color: var(--header);
 $header-color-2: var(--header2);
 $border-color: var(--border);
@@ -78,6 +80,12 @@ $shadow: var(--box-shadow);
 }
 .ratting-bg{
 	background: $ratting;
+}
+.indef-clr{
+	color: $indef;
+}
+.indef-bg{
+	background: $indef;
 }
 .text-clr{
 	color: $text-color;

@@ -88,6 +88,12 @@
 
 
 //Business Single
+.business-section{
+	position: relative;
+	z-index: 1;
+	background: url(../../assets/img/element/business-bg.png) no-repeat center center;
+	background-size: cover;
+}
 .business-single{
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
@@ -111,11 +117,49 @@
 		.mike-hardson{
 			position: absolute;
 			left: 25px;
-			bottom: 10px;
+			bottom: 20px;
 			img{
 				width: 32px;
 				height: 32px;
 				object-fit: contain;
+			}
+		}
+	}
+	.business-content{
+		.review-area{
+			.re-line{
+				width: 1px;
+				background: $indef;
+				height: 16px;
+			}
+		}
+		.business-info{
+			li{
+				display: flex;
+				align-items: center;
+				gap: 8px;
+			}
+		}
+		.line{
+			width: 100%;
+			height: 1px;
+			background-color: rgb(213, 213, 213);
+		}
+		.form-info{
+			button{
+				width: 33px;
+				height: 33px;
+				background-color: rgb(245, 245, 245);
+				transition: all 0.5s;
+				&:hover{
+					background: $theme-color;
+					img{
+						filter: brightness(25);
+					}
+					i{
+						color: $white;
+					}
+				}
 			}
 		}
 	}
