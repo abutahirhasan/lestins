@@ -59,7 +59,7 @@
 			margin: 28px 0;
 			.offer-connection {
 				gap: 8px 20px;
-                flex-wrap: wrap;
+				flex-wrap: wrap;
 				.sty-title {
 					font-size: 18px;
 				}
@@ -75,46 +75,83 @@
 
 //Offer Section
 
-
-
 //Step Section
-.step-section{
-    position: relative;
-    z-index: 1;
-    &::before{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 645px;
-        content: "";
-        background: url(../../assets/img/brand/step-bg.png) no-repeat center center;
-        background-size: cover;
-    }
-    .step-slide-wrap{
-        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
-        padding: 100px 0;
-		.step-sponsor{
-            img{
-                transition: all 0.5s;
-            }
-        }
-    }
-    .swiper-slide.swiper-slide-active{
-        .step-sponsor{
-            img{
-                filter: brightness(25);
-                transform: scale(1.2);
-            }
-        }
-    }
+.step-section {
+	position: relative;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 665px;
+		content: "";
+		background: url(../../assets/img/brand/step-bg.png) no-repeat center
+			center;
+		background-size: cover;
+	}
+	.step-slide-wrap {
+		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+		padding: 100px 0;
+		.step-sponsor {
+			img {
+				transition: all 0.5s;
+			}
+		}
+	}
+	.swiper-slide.swiper-slide-active {
+		.step-sponsor {
+			img {
+				filter: brightness(5);
+				transform: scale(1.2);
+			}
+		}
+	}
 }
 
-.step-items{
-	.step-box{
-		max-width: 217px;
-		background: $white;
-		border: 1px solid rgb(213, 213, 213);
+.step-items {
+	z-index: 1;
+	position: relative;
+	border: 1px solid rgb(213, 213, 213);
+	background: $white;
+	max-width: 217px;
+	padding: 40px 10px;
+	transition: all 0.4s;
+	position: relative;
+	transform: skewX(-10deg);
+	.step-box {
+		transform: skewX(10deg);
+		max-width: 140px;
+		margin: 0 auto;
+		transition: all 0.5s;
+	}
+	&:hover {
+		transform: skewX(0deg);
+		.step-box {
+			transform: skewX(0deg);
+		}
+		.icon {
+			transform: scale(1.02);
+		}
+	}
+	@include breakpoint(max-sm) {
+		max-width: 100%;
+		transform: skewX(0deg);
+		.step-box {
+			transform: skewX(0deg);
+			max-width: 300px;
+			margin: 0 auto;
+			transition: all 0.5s;
+		}
+	}
+}
+.step-shape {
+	position: absolute;
+	left: -240px;
+	height: 100%;
+	top: 0;
+	@include breakpoint(max-lg) {
+		display: none;
 	}
 }
 //Step Section

@@ -133,7 +133,7 @@ CSS TABLE OF CONTENTS
 		});
 
 		//Sponsor Slider
-		var stepSlideWrap = new Swiper(".step-slide-wrap", {
+		const stepSlideWrap = new Swiper(".step-slide-wrap", {
 			spaceBetween: 30,
 			speed: 2000,
 			loop: true,
