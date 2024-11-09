@@ -3108,9 +3108,18 @@ span {
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
   padding: 100px 0;
 }
+.step-section .step-slide-wrap .step-sponsor img {
+  transition: all 0.5s;
+}
 .step-section .swiper-slide.swiper-slide-active .step-sponsor img {
   filter: brightness(25);
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.step-items .step-box {
+  max-width: 217px;
+  background: var(--white);
+  border: 1px solid rgb(213, 213, 213);
 }
 
 .section-title {

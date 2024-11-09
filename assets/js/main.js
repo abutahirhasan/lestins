@@ -87,19 +87,6 @@ CSS TABLE OF CONTENTS
 		//>> Nice Select Start <<//
 		$("select").niceSelect();
 
-		document.addEventListener("DOMContentLoaded", function () {
-			const swiperContainer = document.querySelector(".swiper-container");
-
-			if (swiperContainer) {
-				const swiper = new Swiper(".swiper-container", {
-					// your Swiper options here
-					slidesPerView: 1,
-					spaceBetween: 10,
-					loop: true,
-				});
-			}
-		});
-
 		//Hero Slider
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
@@ -146,10 +133,11 @@ CSS TABLE OF CONTENTS
 		});
 
 		//Sponsor Slider
-		const stepSlideWrap = new Swiper(".step-slide-wrap", {
+		var stepSlideWrap = new Swiper(".step-slide-wrap", {
 			spaceBetween: 30,
 			speed: 2000,
 			loop: true,
+			centeredSlides: true,
 			autoplay: {
 				delay: 2000,
 				disableOnInteraction: false,
