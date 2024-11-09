@@ -87,6 +87,20 @@ CSS TABLE OF CONTENTS
 		//>> Nice Select Start <<//
 		$("select").niceSelect();
 
+		document.addEventListener("DOMContentLoaded", function () {
+			const swiperContainer = document.querySelector(".swiper-container");
+
+			if (swiperContainer) {
+				const swiper = new Swiper(".swiper-container", {
+					// your Swiper options here
+					slidesPerView: 1,
+					spaceBetween: 10,
+					loop: true,
+				});
+			}
+		});
+
+		//Hero Slider
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
 			speed: 3500,
@@ -131,180 +145,36 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
-		//>> Project Slider Start <<//
-		if ($(".project-slider").length > 0) {
-			const projectSlider = new Swiper(".project-slider", {
-				spaceBetween: 30,
-				speed: 2000,
-				loop: true,
-				autoplay: {
-					delay: 2000,
-					disableOnInteraction: false,
+		//Sponsor Slider
+		const stepSlideWrap = new Swiper(".step-slide-wrap", {
+			spaceBetween: 30,
+			speed: 2000,
+			loop: true,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 5,
 				},
-				navigation: {
-					nextEl: ".array-prev",
-					prevEl: ".array-next",
+				991: {
+					slidesPerView: 4,
 				},
-				breakpoints: {
-					1199: {
-						slidesPerView: 3,
-					},
-					991: {
-						slidesPerView: 3,
-					},
-					767: {
-						slidesPerView: 3,
-					},
-					575: {
-						slidesPerView: 2,
-					},
-					400: {
-						slidesPerView: 1,
-					},
-					0: {
-						slidesPerView: 1,
-					},
+				767: {
+					slidesPerView: 3,
 				},
-			});
-		}
-
-		//>> Project Slider Start <<//
-		if ($(".project-slider-2").length > 0) {
-			const projectSlider2 = new Swiper(".project-slider-2", {
-				spaceBetween: 30,
-				speed: 2000,
-				loop: true,
-				autoplay: {
-					delay: 2000,
-					disableOnInteraction: false,
+				575: {
+					slidesPerView: 2,
 				},
-				navigation: {
-					nextEl: ".array-prev",
-					prevEl: ".array-next",
+				400: {
+					slidesPerView: 1,
 				},
-				breakpoints: {
-					1199: {
-						slidesPerView: 4,
-					},
-					991: {
-						slidesPerView: 3,
-					},
-					767: {
-						slidesPerView: 2,
-					},
-					575: {
-						slidesPerView: 1,
-					},
-					400: {
-						slidesPerView: 1,
-					},
-					0: {
-						slidesPerView: 1,
-					},
+				0: {
+					slidesPerView: 1,
 				},
-			});
-		}
-
-		//>> Testimonial Slider Start <<//
-		if ($(".testimonial-slider").length > 0) {
-			const testimonialSlider = new Swiper(".testimonial-slider", {
-				spaceBetween: 30,
-				speed: 1000,
-				loop: true,
-				autoplay: {
-					delay: 1000,
-					disableOnInteraction: false,
-				},
-				navigation: {
-					nextEl: ".array-prev",
-					prevEl: ".array-next",
-				},
-				breakpoints: {
-					991: {
-						slidesPerView: 1,
-					},
-					767: {
-						slidesPerView: 1,
-					},
-					575: {
-						slidesPerView: 1,
-					},
-					400: {
-						slidesPerView: 1,
-					},
-					0: {
-						slidesPerView: 1,
-					},
-				},
-			});
-		}
-
-		//>> Testimonial Slider Start <<//
-		if ($(".testimonial-slider-2").length > 0) {
-			const testimonialSlider2 = new Swiper(".testimonial-slider-2", {
-				spaceBetween: 30,
-				speed: 1000,
-				loop: true,
-				autoplay: {
-					delay: 1000,
-					disableOnInteraction: false,
-				},
-				navigation: {
-					nextEl: ".array-prev",
-					prevEl: ".array-next",
-				},
-				breakpoints: {
-					991: {
-						slidesPerView: 2,
-					},
-					767: {
-						slidesPerView: 2,
-					},
-					575: {
-						slidesPerView: 1,
-					},
-					400: {
-						slidesPerView: 1,
-					},
-					0: {
-						slidesPerView: 1,
-					},
-				},
-			});
-		}
-
-		//>> Brand Slider Start <<//
-		if ($(".brand-slider").length > 0) {
-			const brandSlider = new Swiper(".brand-slider", {
-				spaceBetween: 30,
-				speed: 2000,
-				loop: true,
-				autoplay: {
-					delay: 2000,
-					disableOnInteraction: false,
-				},
-				breakpoints: {
-					1199: {
-						slidesPerView: 5,
-					},
-					991: {
-						slidesPerView: 4,
-					},
-					767: {
-						slidesPerView: 3,
-					},
-					575: {
-						slidesPerView: 2,
-					},
-					400: {
-						slidesPerView: 1,
-					},
-					0: {
-						slidesPerView: 1,
-					},
-				},
-			});
-		}
+			},
+		});
 
 		//>> Progress Bar Js Start <<//
 		$(".progress-bar").waypoint(
@@ -410,7 +280,7 @@ CSS TABLE OF CONTENTS
 		});
 	}
 
-	//Custom Dropdown 
+	//Custom Dropdown
 	const dropdownButtons = document.querySelectorAll(".dropdown-button");
 
 	dropdownButtons.forEach((button) => {
