@@ -477,6 +477,35 @@ span {
   }
 }
 
+.user-items {
+  background: var(--white);
+  padding: 40px 40px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+.user-items .user-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.user-items.active, .user-items:hover {
+  background: var(--black);
+}
+.user-items.active .user-icon, .user-items:hover .user-icon {
+  filter: brightness(25);
+}
+.user-items.active p, .user-items:hover p {
+  color: var(--white);
+}
+.user-items.active h5, .user-items:hover h5 {
+  color: var(--white);
+}
+@media (max-width: 1399px) {
+  .user-items {
+    padding: 30px 30px;
+  }
+}
+
 @-webkit-keyframes rippleOne {
   70% {
     -webkit-box-shadow: 0 0 0 40px rgba(244, 68, 56, 0);
