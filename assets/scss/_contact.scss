@@ -1,209 +1,72 @@
-.contact-wrapper {
-
-    .contact-image {
-        position: relative;
-        margin-left: -26px;
-        
-
-        img {
-            @include imgw;
-        }
-
-        .shape-1 {
-            position: absolute;
-            left: 16%;
-            top: 27%;
-        }
-
-        .shape-2 {
-            position: absolute;
-            left: 2%;
-            top: 45%;
-            z-index: -1;
-        }
-    }
-
-    .contact-from-items {
-        margin-left: 40px;
-
-        @include breakpoint (max-xl){
-            margin-left: 0;
-        }
-
-        h4 {
-            font-weight: 400;
-            margin-top: 12px;
-            color: $text-color;
-            text-transform: capitalize;
-        }
-
-        .contact-from-area {
-            margin-top: 50px;
-
-            .form-clt {
-                position: relative;
-    
-                .icon {
-                    position: absolute;
-                    top: 18px;
-                    left: 0;
-    
-                    @include breakpoint(max-sm){
-                      display: none;
-                    }
-    
-                    i {
-                        color: $header-color;
-                    }
-                }
-    
-                input,textarea {
-                    width: 100%;
-                    outline: none;
-                    border-radius: 0;
-                    border: none;
-                    padding: 20px 30px;
-                    background-color: transparent;
-                    font-weight: 500;
-                    font-size: 20px;
-                    color: rgba(102, 108, 120, 0.80);
-                    border-bottom: 1px solid $border-color;
-                    @include transition;
-    
-                    @include breakpoint(max-sm){
-                        padding: 15px 20px;
-                    }
-    
-                    &::placeholder {
-                        color: $text-color;
-                    }
-
-                    &:hover {
-                        border-bottom: 1px solid $header-color;
-                    }
-                }
-    
-                textarea {
-                    padding: 20px 30px 110px;
-                }
-            }
-        }
-    }
-}
-
-.contact-info-area {
-    padding: 100px 0;
-    @include flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #32353F;
-
-    @include breakpoint (max-xl){
-        flex-wrap: wrap;
-        gap: 40px;
-        padding-top: 85px;
-        justify-content: initial;
-    }
-
-    @include breakpoint (max-sm){
-        gap: 30px;
-    }
-
-    .contact-info-items {
-        @include flex;
-        gap: 28px;
-        justify-content: space-between;
-        position: relative;
-
-        @include breakpoint (max-xl){
-            flex-wrap: wrap;
-        }
-
-        .icon {
-            width: 90px;
-            height: 90px;
-            line-height: 48px;
-            text-align: center;
-            background: #2D313B;
-            padding: 22px;
-        }
-
-        .content {
-
-            p {
-                color: $white;
-                margin-bottom: 5px;
-                font-size: 20px;
-                color: #BBBFCB;
-            }
-
-            h3 {
-                font-size: 24px;
-                color: $white;
-
-                a {
-                    color: $white;
-                }
-            }
-        }
-    }
-}
-
-.contact-us-wrapper-2 {
-
-    .contact-us-area {
-        margin-top: 40px;
-
-        .contact-us-items {
-            margin-bottom: 40px;
-            @include flex;
-            gap: 28px;
-
-            .icon {
-                width: 90px;
-                height: 90px;
-                line-height: 100px;
-                background-color: $theme-color;
-                text-align: center;
-
-                i {
-                    font-size: 40px;
-                    color: $white;
-                }
-            }
-
-            .content {
-                flex-basis: 80%;
-
-                p {
-                    font-size: 20px;
-                    color: #BBBFCB;
-                    margin-bottom: 5px;
-                }
-
-                h3 {
-                    font-size: 24px;
-                    text-transform: uppercase;
-
-                    a {
-                        color: $white;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.contact-section-2 {
-    position: relative;
-
-    .track-image {
+//Feedback Items
+.feedback-section {
+    z-index: 1;
+    &::before{
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
-        bottom: 0;
-
-        img {
-            @include imgw;
-        }
+        height: 740px;
+        content: "";
+        width: 100%;
+        background: url(../img/testimonial/feedback-bg.png) no-repeat center center;
+        background-size: cover;
+        z-index: -1;
     }
 }
+//Feedback Items
+
+//Subscribe Contact
+.subscribe-wrapper {
+	border: 1px solid rgb(213, 213, 213);
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+	background: url(../../assets/img/testimonial/subs-bg.png) no-repeat center
+		center;
+	background-size: cover;
+	z-index: 1;
+	padding: 100px;
+	.subscribe-form {
+		background: $theme-color;
+		border-radius: 8px;
+		padding: 50px 50px;
+		input {
+			width: 100%;
+			padding: 14px 24px;
+			border-radius: 4px;
+			color: $text-color;
+			border: unset;
+			font-size: 16px;
+			font-weight: 500;
+			margin-bottom: 22px;
+			&::placeholder {
+				color: $text-color;
+			}
+		}
+	}
+	.subs-line {
+		position: absolute;
+		top: -20px;
+		left: -10px;
+		z-index: -1;
+	}
+	.subs-list {
+		li {
+			font-size: 18px;
+			color: $text-color;
+			i {
+				color: $theme-color;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 40px;
+		.subscribe-form {
+			padding: 20px 20px;
+		}
+	}
+	@include breakpoint(max-sm) {
+		padding: 20px;
+	}
+}
+//Subscribe Contact
