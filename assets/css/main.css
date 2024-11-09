@@ -3168,6 +3168,91 @@ span {
   }
 }
 
+.popular-section .section-title {
+  max-width: 500px;
+}
+
+.popular-items {
+  position: relative;
+  overflow: hidden;
+}
+.popular-items img {
+  width: 100%;
+  border-radius: 8px;
+}
+.popular-items .box-content {
+  position: absolute;
+  bottom: -100%;
+  left: 15px;
+  width: 90%;
+  background: var(--theme);
+  border-radius: 8px;
+  padding: 40px 30px;
+  transition: all 0.5s;
+}
+.popular-items .box-content .arrow {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  background: var(--white);
+  position: absolute;
+  right: 15px;
+  top: -30px;
+}
+.popular-items .box-content .arrow i {
+  color: var(--theme);
+}
+.popular-items .some-cont {
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+  transition: all 0.4s;
+}
+.popular-items .some-cont .listing {
+  padding: 4px 12px;
+  background: var(--theme);
+  color: var(--white);
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+.popular-items .some-cont .listing::before {
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 12px;
+  height: 20px;
+  content: "";
+  background: var(--theme);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+@media (max-width: 1399px) {
+  .popular-items .box-content {
+    padding: 20px 20px;
+  }
+  .popular-items .box-content .arrow {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+  }
+  .popular-items .box-content .arrow i {
+    color: var(--theme);
+  }
+}
+.popular-items:hover {
+  cursor: pointer;
+}
+.popular-items:hover .some-cont {
+  opacity: 0;
+}
+.popular-items:hover .box-content {
+  bottom: 15px;
+  z-index: 1;
+}
+
 .section-title {
   position: relative;
   z-index: 99;
