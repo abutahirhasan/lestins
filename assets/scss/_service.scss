@@ -86,86 +86,86 @@
 }
 //Discover Category
 
-
 //Business Single
-.business-section{
+.business-section {
 	position: relative;
 	z-index: 1;
-	background: url(../../assets/img/element/business-bg.png) no-repeat center center;
+	background: url(../../assets/img/element/business-bg.png) no-repeat center
+		center;
 	background-size: cover;
 }
-.business-single{
+.business-single {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
 	overflow: hidden;
 	border-radius: 8px;
-	.news-image{
+	.news-image {
 		width: 100%;
 		overflow: hidden;
 		transition: all 0.5s;
-		img{
+		img {
 			width: 100%;
 			overflow: hidden;
 			transition: all 0.5s;
 		}
-		.business-badge{
+		.business-badge {
 			position: absolute;
 			top: 20px;
 			left: 25px;
 			z-index: 1;
 		}
-		.mike-hardson{
+		.mike-hardson {
 			position: absolute;
 			left: 25px;
 			bottom: 20px;
-			img{
+			img {
 				width: 32px;
 				height: 32px;
 				object-fit: contain;
 			}
 		}
 	}
-	.business-content{
-		.review-area{
-			.re-line{
+	.business-content {
+		.review-area {
+			.re-line {
 				width: 1px;
 				background: $indef;
 				height: 16px;
 			}
 		}
-		.business-info{
-			li{
+		.business-info {
+			li {
 				display: flex;
 				align-items: center;
 				gap: 8px;
 			}
 		}
-		.line{
+		.line {
 			width: 100%;
 			height: 1px;
 			background-color: rgb(213, 213, 213);
 		}
-		.form-info{
-			button{
+		.form-info {
+			button {
 				width: 33px;
 				height: 33px;
 				background-color: rgb(245, 245, 245);
 				transition: all 0.5s;
-				&:hover{
+				&:hover {
 					background: $theme-color;
-					img{
+					img {
 						filter: brightness(25);
 					}
-					i{
+					i {
 						color: $white;
 					}
 				}
 			}
 		}
 	}
-	&:hover{
-		.news-image{
-			img{
+	&:hover {
+		.news-image {
+			img {
 				transform: scale(1.1);
 			}
 		}
@@ -173,3 +173,83 @@
 }
 //Business Single
 
+//Benefit Style
+.benefit-section {
+	background: url(../../assets/img/service/bg.png) no-repeat center center;
+	background-size: cover;
+}
+.benefit-area {
+	display: grid;
+	gap: 25px;
+	.benefit-items {
+		.arrows {
+			width: 55px;
+			height: 55px;
+			min-width: 55px;
+			background: $white;
+			border-radius: 50%;
+			transition: all 0.5s;
+		}
+		&:hover {
+			.arrows {
+				transform: rotate(90deg);
+				background: $theme-color;
+				i {
+					color: $white;
+				}
+			}
+		}
+	}
+	.line {
+		width: 100%;
+		height: 1px;
+		background: #d5d5d5;
+	}
+	@include breakpoint(max-xl) {
+		gap: 18px;
+		.benefit-items {
+			.arrows {
+				width: 45px;
+				height: 45px;
+				min-width: 45px;
+			}
+		}
+	}
+}
+.benefit-thumb-inner {
+	z-index: 1;
+	.thumb1 {
+		max-width: 370px;
+		img {
+			width: 100%;
+		}
+	}
+	.thumb2 {
+		max-width: 250px;
+		margin-left: -50px;
+		img {
+			width: 100%;
+		}
+	}
+	.benefit-ele {
+		position: absolute;
+		top: -80px;
+		left: -120px;
+		z-index: -1;
+		animation: rots 2s linear infinite;
+	}
+	@include breakpoint(max-lg) {
+		.benefit-ele {
+			top: initial;
+			bottom: 20px;
+			left: initial;
+			right: 20px;
+		}
+	}
+}
+@keyframes rots {
+	50% {
+		transform: rotate(5deg);
+	}
+}
+//Benefit Style
