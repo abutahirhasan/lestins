@@ -18,5 +18,39 @@
         bottom: 0;
         z-index: -1;
     }
+    @include breakpoint(max-lg){
+        padding: 20px;
+    }
+    @include breakpoint(max-md){
+        p{
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
+.los-angels-wrap{
+    .container{
+        max-width: 1376px;
+
+    }
 }
 //Testimonial Css
+
+//Global SLide btn
+.slide-cmn{
+    width: 41px;
+    height: 41px;
+    background: $white;
+    transition: all 0.4s;
+    i{
+        color: $black;
+        font-size: 15px;
+        transition: all 0.4s;
+    }
+    &:hover{
+        background: $theme-color;
+        i{
+            color: $white;
+        }
+    }
+}

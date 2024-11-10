@@ -148,6 +148,10 @@ Version: 1.0.0
   font-size: 12px;
 }
 
+.fs-13 {
+  font-size: 13px;
+}
+
 .fs-14 {
   font-size: 14px;
   line-height: 20px;
@@ -3433,4 +3437,37 @@ span {
   left: 0;
   bottom: 0;
   z-index: -1;
+}
+@media (max-width: 991px) {
+  .testimonail-items {
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonail-items p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.los-angels-wrap .container {
+  max-width: 1376px;
+}
+
+.slide-cmn {
+  width: 41px;
+  height: 41px;
+  background: var(--white);
+  transition: all 0.4s;
+}
+.slide-cmn i {
+  color: var(--black);
+  font-size: 15px;
+  transition: all 0.4s;
+}
+.slide-cmn:hover {
+  background: var(--theme);
+}
+.slide-cmn:hover i {
+  color: var(--white);
 }/*# sourceMappingURL=main.css.map */

@@ -164,6 +164,46 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//Testimonial Slide1
+		const testimonialWrapper1 = new Swiper(".testimonial-wrapper1", {
+			spaceBetween: 24,
+			speed: 2000,
+			loop: true,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				prevEl: ".array-next",
+				nextEl: ".array-prev",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 2,
+				},
+				991: {
+					slidesPerView: 2,
+					spaceBetween: 16,
+				},
+				767: {
+					slidesPerView: 2,
+					spaceBetween: 16,
+				},
+				575: {
+					slidesPerView: 1,
+					spaceBetween: 16,
+				},
+				400: {
+					slidesPerView: 1,
+					spaceBetween: 16,
+				},
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 16,
+				},
+			},
+		});
+
 		//>> Progress Bar Js Start <<//
 		$(".progress-bar").waypoint(
 			function () {
