@@ -519,6 +519,15 @@
 			margin: 0 auto;
 		}
 	}
+	&.header-version2{
+		padding-top: 0;
+		padding: 25px 0;
+		border: unset !important;
+		box-sizing: none !important;
+		&.sticky{
+			padding: 0 0;
+		}
+	}
 	@include breakpoint(max-xl) {
 		.common-btn {
 			padding: 9px 16px 11px !important;
@@ -567,6 +576,7 @@
 		background: var(--header);
 	}
 }
+
 
 //>>>>> Offcanvas Start <<<<<//
 .fix-area {

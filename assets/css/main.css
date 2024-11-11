@@ -1833,6 +1833,15 @@ span {
   max-width: 1475px;
   margin: 0 auto;
 }
+.header-1.header-version2 {
+  padding-top: 0;
+  padding: 25px 0;
+  border: unset !important;
+  box-sizing: none !important;
+}
+.header-1.header-version2.sticky {
+  padding: 0 0;
+}
 @media (max-width: 1199px) {
   .header-1 .common-btn {
     padding: 9px 16px 11px !important;
@@ -2607,6 +2616,35 @@ span {
   }
 }
 
+.browse-hilisht {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.browse-hilisht .b-hilisht-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+}
+.browse-hilisht .b-hilisht-item {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 2px 16px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.browse-hilisht .b-hilisht-item:hover {
+  cursor: pointer;
+}
+.browse-hilisht .arrow-ele {
+  position: absolute;
+  top: 100%;
+  left: 160px;
+}
+
 .hero-section .swiper-slide.swiper-slide-active .hero-bg {
   -webkit-transform: scale(1.35);
   transform: scale(1.35);
@@ -2620,6 +2658,50 @@ span {
   opacity: 1;
   transform: translateY(0px);
   transition: all 2500ms ease;
+}
+.hero-section.hero-section2 {
+  background: url(../../assets/img/hero/hero2-bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 145px 0 0;
+}
+.hero-section.hero-section2 .hero-wrap2 {
+  background: url(../../assets/img/hero/hero-thumb2.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 12px;
+  padding: 149px 0 149px;
+}
+.hero-section.hero-section2 .hero-wrap2 .hero-content {
+  position: relative;
+  z-index: 1;
+  transform: initial;
+  opacity: initial;
+  max-width: 1171px;
+  margin: 0 auto;
+}
+.hero-section.hero-section2 .hero-wrap2 .hero-content .listing-search-form {
+  background: transparent;
+  padding: 0 0;
+}
+.hero-section.hero-section2 .hero-wrap2 .hero-content h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.hero-section.hero-section2 .container {
+  max-width: 1475px;
+  margin: 0 auto;
+}
+.hero-section.hero-section2 .browse-hilisht {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.hero-section.hero-section2 .browse-hilisht .arrow-eles {
+  position: absolute;
+  left: 23%;
+  top: 0;
+  width: 90px;
+  transform: rotate(32deg);
 }
 
 .scrolling-wrap {
