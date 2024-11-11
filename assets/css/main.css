@@ -3668,4 +3668,100 @@ span {
 }
 .slide-cmn:hover i {
   color: var(--white);
+}
+
+.funfact-section {
+  background: url(../../assets/img/project/fun-fact.png) no-repeat center center;
+  background-size: cover;
+  padding: 90px 0;
+}
+
+.funfact-content .section-title {
+  margin-bottom: 44px;
+}
+.funfact-content .funfact-info {
+  display: grid;
+  gap: 24px;
+}
+.funfact-content .funfact-info .funfact-item .icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+}
+@media (max-width: 767px) {
+  .funfact-content .section-title {
+    margin-bottom: 30px;
+  }
+  .funfact-content .funfact-info {
+    display: grid;
+    gap: 20px;
+  }
+  .funfact-content .funfact-info .funfact-item .icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+  .funfact-content .funfact-info .funfact-item .icon i {
+    font-size: 16px;
+  }
+}
+
+.funfact-counting-wrap .funfact-count {
+  width: 192px;
+  height: 192px;
+  min-width: 192px;
+}
+.funfact-counting-wrap .funfact-count h2 {
+  font-size: 40px;
+}
+.funfact-counting-wrap .funfact-count span {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 18px;
+  text-align: center;
+  display: block;
+}
+.funfact-counting-wrap .funfact-count .icon {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  position: absolute;
+}
+.funfact-counting-wrap .funfact-count .posi1 {
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+.funfact-counting-wrap .funcat-inner {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .funfact-counting-wrap .funfact-count {
+    width: 122px;
+    height: 122px;
+    min-width: 122px;
+  }
+  .funfact-counting-wrap .funfact-count h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .funfact-counting-wrap .funfact-count span {
+    line-height: 18px;
+  }
+  .funfact-counting-wrap .funfact-count .icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+  }
+  .funfact-counting-wrap .funfact-count .posi1 {
+    bottom: -34px;
+  }
+  .funfact-counting-wrap .funcat-inner {
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+}
+.funfact-counting-wrap .third-count {
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

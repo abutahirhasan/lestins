@@ -113,3 +113,108 @@
 		}
 	}
 }
+
+//FuncFact Style
+.funfact-section {
+	background: url(../../assets/img/project/fun-fact.png) no-repeat center
+		center;
+	background-size: cover;
+	padding: 90px 0;
+}
+.funfact-content {
+	.section-title {
+		margin-bottom: 44px;
+	}
+	.funfact-info {
+		display: grid;
+		gap: 24px;
+		.funfact-item {
+			.icon {
+				width: 60px;
+				height: 60px;
+				min-width: 60px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.section-title {
+			margin-bottom: 30px;
+		}
+		.funfact-info {
+			display: grid;
+			gap: 20px;
+			.funfact-item {
+				.icon {
+					width: 44px;
+					height: 44px;
+					min-width: 44px;
+					i {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+.funfact-counting-wrap {
+	.funfact-count {
+		width: 192px;
+		height: 192px;
+		min-width: 192px;
+		h2 {
+			font-size: 40px;
+		}
+		span {
+			color: rgba(255, 255, 255, 0.6);
+			line-height: 18px;
+			text-align: center;
+			display: block;
+		}
+		.icon {
+			width: 55px;
+			height: 55px;
+			min-width: 55px;
+			position: absolute;
+		}
+		.posi1 {
+			left: 50%;
+			bottom: -20px;
+			transform: translateX(-50%);
+		}
+	}
+	.funcat-inner {
+		display: flex;
+		gap: 50px;
+		justify-content: center;
+	}
+	@include breakpoint(max-xs) {
+		.funfact-count {
+			width: 122px;
+			height: 122px;
+			min-width: 122px;
+			h2 {
+				font-size: 24px;
+				margin-bottom: 8px;
+			}
+			span {
+				line-height: 18px;
+			}
+			.icon {
+				width: 55px;
+				height: 55px;
+				min-width: 55px;
+			}
+			.posi1 {
+				bottom: -34px;
+			}
+		}
+		.funcat-inner {
+			gap: 20px;
+			margin-bottom: 10px;
+		}
+	}
+	.third-count {
+		margin: 0 auto;
+	}
+}
+//FuncFact Style
