@@ -1,98 +1,104 @@
-.team-box-items {
-    margin-top: 30px;
-    position: relative;
-
-    .team-image {
-        position: relative;
-        z-index: 9;
-
-        img {
-            @include imgw;
-        }
-        
-        .social-profile {
-            position: absolute;
-            right: 34px;
-            bottom: -20px;
-            content: "";
-            -webkit-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out;
-            z-index: 2;
-            display: inline-block;
-            overflow: hidden;
-            cursor: pointer;
-
-            ul {
-                transform: translateY(100px);
-                transition: all 0.6s ease-in-out;
-                opacity: 0;
-                visibility: hidden;
-                z-index: -1;
-
-                li {
-                    a {
-                        width: 60px;
-                        height: 60px;
-                        line-height: 60px;
-                        text-align: center;
-                        display: block;
-                        background: $white;
-                        color: $header-color;
-                        -webkit-transition: all .4s ease-in-out;
-                        transition: all .4s ease-in-out;
-                        text-align: center;
-                        margin: 0 auto;
-                        margin-bottom: 10px;
-
-                        &:hover {
-                            background-color: $theme-color;
-                            color: $white;
-                        }
-                    }
-                }
-            }
-
-            .plus-btn {
-                z-index: 2;
-                cursor: pointer;
-                width: 60px;
-                height: 60px;
-                line-height: 60px;
-                text-align: center;
-                display: inline-block;
-                background: $theme-color;
-                color: $white;
-                -webkit-transition: all .3s ease-in-out;
-                transition: all .3s ease-in-out;
-                &:hover {
-                    background-color: $theme-color;
-                }
-            }
-
-            &:hover {
-                ul {
-                    transform: translateY(0);
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
-        }
-    }
-
-    .team-content {
-        margin-top: 28px;
-
-        h3 {
-           font-weight: 900;
-           margin-bottom: 5px;
-
-           a {
-            color: $header-color;
-           }
-        }
-
-        p {
-            font-size: 20px;
-        }
-    }
+//What We do
+.what-wedo-wrap {
+	z-index: 1;
+	position: relative;
+	&::before {
+		position: absolute;
+		height: 630px;
+		width: 1490px;
+		content: "";
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		content: "";
+		z-index: -1;
+		background: url(../../assets/img/team/what-bg.png) no-repeat center center;
+		background-size: cover;
+		border-radius: 16px;
+		overflow: hidden;
+	}
+	.ele-badge1,
+	.ele-badge2,
+	.ele-badge3 {
+		position: absolute;
+		width: 61px;
+		height: 61px;
+		border: 5px solid $white;
+	}
+	.ele-badge1 {
+		right: -120px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.ele-badge2 {
+		right: 30%;
+		top: 22px;
+		animation: updowns 2s linear infinite;
+	}
+	.ele-badge3 {
+		right: 40%;
+		bottom: 10px;
+	}
+	@include breakpoint(max-lg) {
+		&::before {
+			height: 100%;
+		}
+		padding: 60px 0;
+		.ele-badge1 {
+			display: none;
+		}
+		.ele-badge2 {
+			display: none;
+		}
+	}
 }
+.what-wedo-thumbarea {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	justify-content: flex-end;
+	.thumb {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+	.what-wedo-thumbinner {
+		display: grid;
+		gap: 24px;
+		.thumb2 {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	//review badge
+	.review-badge {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		animation: updowns 2s linear infinite;
+	}
+	@include breakpoint(max-sm) {
+		gap: 14px;
+		.thumb1 {
+			max-width: 300px;
+			img {
+				width: 100%;
+			}
+		}
+		.what-wedo-thumbinner {
+			display: grid;
+			gap: 14px;
+			.thumb2 {
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+//What We do
