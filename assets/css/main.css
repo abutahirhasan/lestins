@@ -3949,6 +3949,156 @@ span {
   }
 }
 
+.discover-section {
+  z-index: 1;
+}
+.discover-section .discover-shape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.discover-items {
+  border: 1px solid rgb(213, 213, 213);
+  padding: 40px 50px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.discover-items .box {
+  max-width: 345px;
+}
+.discover-items .badge-ele {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 155px;
+  height: 155px;
+  background: rgb(213, 213, 213);
+  border-bottom-left-radius: 150px;
+}
+.discover-items:hover {
+  border-color: var(--theme);
+}
+@media (max-width: 1199px) {
+  .discover-items .badge-ele {
+    width: 105px;
+    height: 105px;
+  }
+  .discover-items .badge-ele img {
+    width: 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .discover-items {
+    padding: 24px 24px;
+  }
+  .discover-items .badge-ele {
+    width: 65px;
+    height: 65px;
+  }
+  .discover-items .badge-ele img {
+    width: 30px;
+  }
+}
+
+.discover-separate .container {
+  max-width: 1465px;
+  margin: 0 auto;
+}
+
+.discover-all-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.discover-all-wrap .discover-separ-item {
+  width: 20%;
+  padding: 10px;
+}
+.discover-all-wrap .discover-separ-item .box {
+  background-color: rgb(245, 245, 245);
+  border-radius: 12px;
+  border: 5px solid var(--white);
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+  padding: 30px 30px;
+  position: relative;
+  z-index: 1;
+}
+.discover-all-wrap .discover-separ-item .box::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url(../../assets/img/project/discover-thumb.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 12px;
+  z-index: -1;
+  transition: all 0.4s;
+  transform: scale(0);
+}
+.discover-all-wrap .discover-separ-item .box .icon {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 45px;
+  height: 45px;
+}
+.discover-all-wrap .discover-separ-item .box .icon i {
+  color: var(--white);
+  font-size: 16px;
+}
+.discover-all-wrap .discover-separ-item.active .box::before, .discover-all-wrap .discover-separ-item:hover .box::before {
+  transform: scale(1);
+}
+.discover-all-wrap .discover-separ-item.active span, .discover-all-wrap .discover-separ-item:hover span {
+  color: var(--white);
+}
+@media (max-width: 1199px) {
+  .discover-all-wrap .discover-separ-item {
+    width: 20%;
+    padding: 5px;
+  }
+  .discover-all-wrap .discover-separ-item .box {
+    padding: 24px 18px;
+  }
+}
+@media (max-width: 991px) {
+  .discover-all-wrap .discover-separ-item {
+    width: 33.33%;
+    padding: 5px;
+  }
+  .discover-all-wrap .discover-separ-item .box {
+    padding: 24px 18px;
+  }
+}
+@media (max-width: 767px) {
+  .discover-all-wrap .discover-separ-item {
+    width: 50%;
+    padding: 5px;
+  }
+  .discover-all-wrap .discover-separ-item .box {
+    padding: 24px 18px;
+  }
+}
+@media (max-width: 450px) {
+  .discover-all-wrap .discover-separ-item {
+    width: 100%;
+    padding: 5px;
+  }
+  .discover-all-wrap .discover-separ-item .box {
+    padding: 24px 18px;
+  }
+}
+
+.watch-section {
+  background: url(../../assets/img/project/watch-bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 0 0 120px;
+  background-attachment: fixed;
+}
+
 .what-wedo-wrap {
   z-index: 1;
   position: relative;

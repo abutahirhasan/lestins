@@ -274,17 +274,174 @@
 			}
 		}
 	}
-	@include breakpoint(max-xxl){
+	@include breakpoint(max-xxl) {
 		padding: 90px 0;
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 80px 0;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		padding: 70px 0;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		padding: 60px 0;
 	}
 }
 //Sponsor Section3
+
+//Discover
+.discover-section {
+	z-index: 1;
+	.discover-shape {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: -1;
+	}
+}
+.discover-items {
+	border: 1px solid rgb(213, 213, 213);
+	padding: 40px 50px;
+	overflow: hidden;
+	transition: all 0.4s;
+	.box {
+		max-width: 345px;
+	}
+	.badge-ele {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 155px;
+		height: 155px;
+		background: rgb(213, 213, 213);
+		border-bottom-left-radius: 150px;
+	}
+	&:hover {
+		border-color: $theme-color;
+	}
+	@include breakpoint(max-xl) {
+		.badge-ele {
+			width: 105px;
+			height: 105px;
+			img {
+				width: 50px;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 24px 24px;
+		.badge-ele {
+			width: 65px;
+			height: 65px;
+			img {
+				width: 30px;
+			}
+		}
+	}
+}
+.discover-separate {
+	.container {
+		max-width: 1465px;
+		margin: 0 auto;
+	}
+}
+.discover-all-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	.discover-separ-item {
+		width: 20%;
+		padding: 10px;
+		.box {
+			background-color: rgb(245, 245, 245);
+			border-radius: 12px;
+			border: 5px solid $white;
+			box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+			padding: 30px 30px;
+			position: relative;
+			z-index: 1;
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				content: "";
+				background: url(../../assets/img/project/discover-thumb.png)
+					no-repeat center center;
+				background-size: cover;
+				border-radius: 12px;
+				z-index: -1;
+				transition: all 0.4s;
+				transform: scale(0);
+			}
+			.icon {
+				position: absolute;
+				right: 24px;
+				top: 24px;
+				width: 45px;
+				height: 45px;
+				i {
+					color: $white;
+					font-size: 16px;
+				}
+			}
+		}
+		&.active,
+		&:hover {
+			.box {
+				&::before {
+					transform: scale(1);
+				}
+			}
+			span {
+				color: $white;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.discover-separ-item {
+			width: 20%;
+			padding: 5px;
+			.box{
+				padding: 24px 18px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.discover-separ-item {
+			width: 33.33%;
+			padding: 5px;
+			.box{
+				padding: 24px 18px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.discover-separ-item {
+			width: 50%;
+			padding: 5px;
+			.box{
+				padding: 24px 18px;
+			}
+		}
+	}
+	@include breakpoint(max-xxsmall) {
+		.discover-separ-item {
+			width: 100%;
+			padding: 5px;
+			.box{
+				padding: 24px 18px;
+			}
+		}
+	}
+}
+//Discover
+
+//Watch Style
+.watch-section{
+	background: url(../../assets/img/project/watch-bg.png) no-repeat center center;
+	background-size: cover;
+	padding: 0 0 120px;
+	background-attachment: fixed;
+}
+//Watch Style
