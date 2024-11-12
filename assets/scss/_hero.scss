@@ -387,7 +387,7 @@
 					.listing-search-form {
 						background: transparent;
 						padding: 0 0;
-						.search-wrap{
+						.search-wrap {
 							width: 90%;
 						}
 					}
@@ -416,7 +416,7 @@
 				padding: 119px 0 119px;
 				.hero-content {
 					.listing-search-form {
-						.search-wrap{
+						.search-wrap {
 							width: 90%;
 						}
 					}
@@ -440,7 +440,7 @@
 				padding: 119px 0 119px;
 				.hero-content {
 					.listing-search-form {
-						.search-wrap{
+						.search-wrap {
 							width: 90%;
 						}
 					}
@@ -464,7 +464,7 @@
 				padding: 90px 0 110px;
 				.hero-content {
 					.listing-search-form {
-						.search-wrap{
+						.search-wrap {
 							width: 90%;
 						}
 					}
@@ -488,7 +488,7 @@
 				padding: 90px 0 100px;
 				.hero-content {
 					.listing-search-form {
-						.search-wrap{
+						.search-wrap {
 							width: 95%;
 						}
 					}
@@ -503,6 +503,47 @@
 				.arrow-eles {
 					left: 23%;
 					width: 90px;
+				}
+			}
+		}
+	}
+	&.hero-section3 {
+		background: url(../../assets/img/hero/hero3-bg.jpg) no-repeat center
+			center;
+		background-size: cover;
+		.hero-wrap2 {
+			background: transparent;
+			padding: 0 0 0;
+			.hero-content {
+				position: relative;
+				z-index: 1;
+				transform: initial;
+				opacity: initial;
+				max-width: 1171px;
+				margin: 0 0 0 0;
+				.listing-search-form {
+					background: transparent;
+					padding: 0 0;
+				}
+				h1 {
+					font-size: 70px;
+					text-transform: uppercase;
+					margin-bottom: 40px;
+					color: $black;
+				}
+			}
+			.browse-hilisht{
+				padding: 0 0;
+				margin-top: 30px;
+				.b-hilisht-text{
+					color: $black;
+				}
+				.b-hilisht-item{
+					background-color: rgb(22, 22, 22, 0.2);
+					transition: all 0.4s;
+					&:hover{
+						background: $theme-color;
+					}
 				}
 			}
 		}

@@ -2826,6 +2826,46 @@ span {
     width: 90px;
   }
 }
+.hero-section.hero-section3 {
+  background: url(../../assets/img/hero/hero3-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.hero-section.hero-section3 .hero-wrap2 {
+  background: transparent;
+  padding: 0 0 0;
+}
+.hero-section.hero-section3 .hero-wrap2 .hero-content {
+  position: relative;
+  z-index: 1;
+  transform: initial;
+  opacity: initial;
+  max-width: 1171px;
+  margin: 0 0 0 0;
+}
+.hero-section.hero-section3 .hero-wrap2 .hero-content .listing-search-form {
+  background: transparent;
+  padding: 0 0;
+}
+.hero-section.hero-section3 .hero-wrap2 .hero-content h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--black);
+}
+.hero-section.hero-section3 .hero-wrap2 .browse-hilisht {
+  padding: 0 0;
+  margin-top: 30px;
+}
+.hero-section.hero-section3 .hero-wrap2 .browse-hilisht .b-hilisht-text {
+  color: var(--black);
+}
+.hero-section.hero-section3 .hero-wrap2 .browse-hilisht .b-hilisht-item {
+  background-color: rgba(22, 22, 22, 0.2);
+  transition: all 0.4s;
+}
+.hero-section.hero-section3 .hero-wrap2 .browse-hilisht .b-hilisht-item:hover {
+  background: var(--theme);
+}
 
 .scrolling-wrap {
   overflow: hidden;
@@ -3716,6 +3756,42 @@ span {
     transform: rotate(5deg);
   }
 }
+.sponsor-section3 {
+  background: url(../../assets/img/hero/sponsor3-bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 110px 0;
+}
+.sponsor-section3 .step-sponsor {
+  transition: all 0.5s;
+}
+.sponsor-section3 .step-sponsor img {
+  transition: all 0.5s;
+}
+.sponsor-section3 .swiper-slide.swiper-slide-active .step-sponsor img {
+  filter: brightness(5);
+  transform: scale(1.2);
+}
+@media (max-width: 1399px) {
+  .sponsor-section3 {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .sponsor-section3 {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 991px) {
+  .sponsor-section3 {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 767px) {
+  .sponsor-section3 {
+    padding: 60px 0;
+  }
+}
+
 .what-wedo-wrap {
   z-index: 1;
   position: relative;
