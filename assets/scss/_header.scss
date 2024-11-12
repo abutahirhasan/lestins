@@ -528,6 +528,35 @@
 			padding: 0 0;
 		}
 	}
+	&.header-version3{
+		&.sticky{
+			background: $white;
+		}
+		.dropdown-button{
+			i{
+				color: $black;
+			}
+		}
+		.sidebar__toggle{
+			i{
+				color: $black !important;
+			}
+		}
+		@include breakpoint(xl){
+			.main-menu{
+				ul{
+					li{
+						a{
+							color: $black;
+						}
+					}
+				}
+			}
+		}
+		@include breakpoint(max-xl){
+			background: $white;
+		}
+	}
 	@include breakpoint(max-xl) {
 		.common-btn {
 			padding: 9px 16px 11px !important;
