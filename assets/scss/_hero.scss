@@ -365,16 +365,145 @@
 			max-width: 1475px;
 			margin: 0 auto;
 		}
-		.browse-hilisht{
+		.browse-hilisht {
 			padding: 50px 0;
 			display: flex;
 			justify-content: center;
-			.arrow-eles{
+			.arrow-eles {
 				position: absolute;
 				left: 23%;
 				top: 0;
 				width: 90px;
 				transform: rotate(32deg);
+			}
+		}
+		@include breakpoint(max-xxl) {
+			padding: 145px 0 0;
+			.hero-wrap2 {
+				padding: 149px 0 149px;
+				.hero-content {
+					max-width: 1171px;
+					margin: 0 auto;
+					.listing-search-form {
+						background: transparent;
+						padding: 0 0;
+						.search-wrap{
+							width: 90%;
+						}
+					}
+					h1 {
+						font-size: 70px;
+						text-transform: uppercase;
+						margin-bottom: 40px;
+					}
+				}
+			}
+			.container {
+				max-width: 1475px;
+				margin: 0 auto;
+			}
+			.browse-hilisht {
+				padding: 50px 0;
+				.arrow-eles {
+					left: 23%;
+					width: 90px;
+				}
+			}
+		}
+		@include breakpoint(max-xl) {
+			padding: 135px 0 0;
+			.hero-wrap2 {
+				padding: 119px 0 119px;
+				.hero-content {
+					.listing-search-form {
+						.search-wrap{
+							width: 90%;
+						}
+					}
+					h1 {
+						font-size: 56px;
+						margin-bottom: 40px;
+					}
+				}
+			}
+			.browse-hilisht {
+				padding: 50px 0;
+				.arrow-eles {
+					left: 23%;
+					width: 90px;
+				}
+			}
+		}
+		@include breakpoint(max-lg) {
+			padding: 125px 0 0;
+			.hero-wrap2 {
+				padding: 119px 0 119px;
+				.hero-content {
+					.listing-search-form {
+						.search-wrap{
+							width: 90%;
+						}
+					}
+					h1 {
+						font-size: 56px;
+						margin-bottom: 40px;
+					}
+				}
+			}
+			.browse-hilisht {
+				padding: 50px 0;
+				.arrow-eles {
+					left: 23%;
+					width: 90px;
+				}
+			}
+		}
+		@include breakpoint(max-md) {
+			padding: 85px 0 0;
+			.hero-wrap2 {
+				padding: 90px 0 110px;
+				.hero-content {
+					.listing-search-form {
+						.search-wrap{
+							width: 90%;
+						}
+					}
+					h1 {
+						font-size: 48px;
+						margin-bottom: 40px;
+					}
+				}
+			}
+			.browse-hilisht {
+				padding: 50px 0;
+				.arrow-eles {
+					left: 23%;
+					width: 90px;
+				}
+			}
+		}
+		@include breakpoint(max-md) {
+			padding: 85px 0 0;
+			.hero-wrap2 {
+				padding: 90px 0 100px;
+				.hero-content {
+					.listing-search-form {
+						.search-wrap{
+							width: 95%;
+						}
+					}
+					h1 {
+						font-size: 36px;
+						margin-bottom: 30px;
+					}
+				}
+			}
+			.browse-hilisht {
+				padding: 50px 0;
+				.arrow-eles {
+					left: 23%;
+					width: 90px;
+				}
 			}
 		}
 	}
