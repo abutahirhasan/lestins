@@ -121,6 +121,8 @@
 	}
 	.swiper-slide.swiper-slide-active {
 		.step-sponsor {
+			margin: 0 auto;
+			text-align: center;
 			img {
 				filter: brightness(0);
 				transition: all 0.5s;

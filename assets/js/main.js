@@ -315,6 +315,44 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		// 12 -> 3D swiper effect
+		var swiper3D = new Swiper(".swiper-3d-container", {
+			slidesPerView: "auto",
+			loop: true,
+			centeredSlides: true,
+			speed: 1000,
+			freeMode: true,
+			effect: "coverflow",
+			autoplay: {
+				delay: 3000,
+			},
+			coverflowEffect: {
+				rotate: 1,
+				stretch: 50,
+				depth: 90,
+				modifier: 1,
+				slideShadows: false,
+			},
+			navigation: {
+				prevEl: ".swiper-3d-button-prev",
+				nextEl: ".swiper-3d-button-next",
+			},
+			breakpoints: {
+				1400: {
+					slidesPerView: 4,
+				},
+				1024: {
+					slidesPerView: 3,
+				},
+				768: {
+					slidesPerView: 2.4,
+				},
+				640: {
+					slidesPerView: 2,
+				},
+			},
+		});
+
 		//>> Progress Bar Js Start <<//
 		$(".progress-bar").waypoint(
 			function () {
