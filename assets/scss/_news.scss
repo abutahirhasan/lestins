@@ -61,32 +61,90 @@
 .news-section3 {
 	position: relative;
 	z-index: 1;
-    padding-top: 90px;
+	padding-top: 90px;
 	&::before {
 		position: absolute;
-        top: 0;
+		top: 0;
 		right: 0;
-        width: 932px;
+		width: 932px;
 		height: 100%;
 		content: "";
 		z-index: -1;
-        background-color: rgb(245, 245, 245);
+		background-color: rgb(245, 245, 245);
 	}
-    .slide-cmn{
-        background-color: rgb(245, 245, 245);
-        border-radius: 50% !important;
-        i{
-            color: $text-color;
-        }
-        &.active{
-            background: $theme-color;
-            i{
-                color: $white;
-            }
-        }
-    }
+	.slide-cmn {
+		background-color: rgb(245, 245, 245);
+		border-radius: 50% !important;
+		i {
+			color: $text-color;
+		}
+		&.active {
+			background: $theme-color;
+			i {
+				color: $white;
+			}
+		}
+	}
 }
 
-.news-slider-maintain{
-    margin-left: 300px;
+.news-slider-maintain {
+	margin-left: 300px;
+	&.style4 {
+		margin-bottom: -60px;
+	}
+	@media screen and (max-width: 1900px) {
+		margin-left: 0;
+	}
 }
+
+//Blog Version 04
+.blog-news-wrapper3 {
+	&.style4 {
+		.news-box-items {
+			background: $white;
+			box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+			margin-bottom: 60px;
+			.news-content {
+				background: $white;
+			}
+			.comment-blog {
+				margin-bottom: 0;
+				margin-top: 20px;
+				width: 100%;
+				box-shadow: none;
+				border: 1px solid rgb(213, 213, 213);
+			}
+		}
+	}
+}
+
+//Newsletter Sponsor
+.newsletter-places {
+	background: url(../../assets/img/element/newsletter-bg.png) no-repeat center
+		center;
+	background-size: cover;
+	padding: 76px 50px 76px 20px;
+	border-radius: 12px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 118px;
+	h3 {
+		font-size: 40px;
+		color: $white;
+	}
+	@include breakpoint(max-md) {
+		padding: 65px 20px 65px 20px;
+		border-radius: 12px;
+		display: flex;
+		text-align: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 16px 30px;
+		h3 {
+			font-size: 29px;
+		}
+	}
+}
+//Newsletter Sponsor
