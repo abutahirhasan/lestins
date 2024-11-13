@@ -164,6 +164,37 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//Land Feature
+		const landWrapper = new Swiper(".land-wrapper", {
+			spaceBetween: 2,
+			speed: 2000,
+			loop: true,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 4,
+				},
+				991: {
+					slidesPerView: 4,
+				},
+				767: {
+					slidesPerView: 3,
+				},
+				500: {
+					slidesPerView: 2,
+				},
+				400: {
+					slidesPerView: 1,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//Testimonial Slide1
 		const testimonialWrapper1 = new Swiper(".testimonial-wrapper1", {
 			spaceBetween: 24,

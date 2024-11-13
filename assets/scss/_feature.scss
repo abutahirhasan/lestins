@@ -1,283 +1,153 @@
-.choose-us-box-items {
-    margin-top: 30px;
-    padding: 44px 36px;
-    border: 1px solid $border-color;
-    @include transition;
+//Offer Section3
+.offer3-section {
+	z-index: 1;
+	.offer-trit {
+		background-color: rgb(245, 245, 245);
+		box-shadow: inset -4px 0px 0px 0px rgba(233, 11, 53, 0.004);
+	}
+	.offer-elee {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+	}
+	.offer3-thumb {
+		direction: rtl;
+		margin: 0 120px;
+		position: relative;
+		img {
+			max-width: unset;
+		}
+		.directory-badge {
+			position: absolute;
+			bottom: 46px;
+			right: 46px;
+			img {
+				width: 50px;
+				margin-bottom: 14px;
+			}
+			span {
+				font-size: 22px;
+				font-weight: 500;
+				line-height: 26px;
+				color: $white;
+				display: block;
+				text-align: start;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.offer3-thumb {
+			direction: rtl;
+			margin: 0 60px;
+			img {
+				max-width: unset;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.offer3-thumb {
+			direction: rtl;
+			margin: 0 0px;
+			img {
+				max-width: unset;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.offer3-thumb {
+			direction: rtl;
+			margin: 10px 0px 0;
+			width: 100%;
+			img {
+				max-width: 100%;
+			}
+			.directory-badge {
+				position: absolute;
+				bottom: 16px;
+				right: 16px;
+				img {
+					width: 40px;
+					margin-bottom: 9px;
+				}
+				span {
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xxsmall) {
+		.offer3-thumb {
+			.directory-badge {
+				bottom: 7px;
+				right: 7px;
+				img {
+					width: 20px;
+					margin-bottom: 5px;
+				}
+				span {
+					font-size: 12px;
+					line-height: 26px;
+				}
+			}
+		}
+	}
+}
+//Offer Section3
 
-    .icon {
-        margin-bottom: 120px;
-    }
-
-    .choose-us-content {
-
-        h3 {
-            font-size: 24px;
-
-            a {
-                color: $header-color;
-                @include transition;
-
-                &:hover {
-                    color: $theme-color;
-                }
+//Land Feature
+.land-items {
+	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+		border-radius: 8px;
+	}
+	.land-content {
+        width: 80%;
+		border-radius: 5px;
+		background-color: rgb(22, 22, 22, 0.902);
+		z-index: 1;
+		padding: 36px 36px;
+		position: absolute;
+		bottom: 35px;
+		left: 35px;
+        transition: all 0.5s;
+        @include breakpoint(max-xxxl){
+            bottom: 20px;
+            left: 20px;
+        }
+        @include breakpoint(max-xxl){
+            width: 85%;
+            left: 14px;
+            bottom: 14px;
+            padding: 28px 20px;
+        }
+        @include breakpoint(max-xl){
+            padding: 26px 16px;
+            span{
+                margin-bottom: 0 !important;
             }
-        }
-
-        p {
-            font-size: 20px;
-            padding-bottom: 50px;
-        }
-    }
-
-    &:hover {
-        border-bottom: 4px solid $theme-color;
-        background: $bg-color;
-    }
-}
-
-.feature-area {
-    position: relative;
-    z-index: 1;
-
-    .red-shape {
-        position: absolute;
-        left: 5%;
-        top: 0;
-        height: 707px;
-        z-index: -1;
-
-        img {
-            height: 100%;
-        }
-    }
-
-    .feature-item {
-        display: flex;
-        gap: 40px;
-        margin-bottom: 70px;
-
-        .number {
-            font-size: 18px;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            font-weight: 700;
-            text-align: center;
-            color: $white;
-            background: $theme-color;
-        }
-
-        .content {
-            flex-basis: 80%;
-
-            h3 {
-                margin-bottom: 10px;
-            }
-        }
-    }
-}
-
-.how-work-section {
-    position: relative;
-
-    .shape {
-        position: absolute;
-        bottom: 0;
-    }
-}
-
-.why-choose-us-main-items {
-    position: relative;
-    overflow: hidden;
-    margin-top: 30px;
-
-    h3 {
-        font-size: 24px;
-    }
-
-    .why-choose-us-items {
-        padding: 44px 36px;
-        border: 1px solid $border-color;
-        width: 100%;
-        height: 100%;
-        @include transition;
-
-        .icon {
-            margin-bottom: 120px;
-        }
-    }
-
-    .why-choose-content-hover {
-        padding: 44px 36px;
-        background-color: $bg-color;
-        border-bottom: 4px solid $theme-color !important;
-        border: 1px solid $bg-color;
-        transition: all 200ms linear;
-        top: 0;
-        right: -100%;
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
-        width: 100%;
-        height: 100%;
-
-        p {
-            margin-top: 10px;
-            font-weight: 400;
-        }
-    }
-
-    &:hover {
-        .why-choose-us-items {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .why-choose-content-hover {
-            opacity: 1;
-            visibility: visible;
-            right: 0;
-        }
-    }
-}
-
-.company-skill-wrapper {
-    .company-skills-content {
-        max-width: 600px;
-        position: relative;
-        z-index: 9;
-
-        .skill-feature-items {
-            margin-top: 30px;
-
-            .skill-feature {
-                &:not(:last-child){
-                    margin-bottom: 30px;
-                }
-
-                .box-title {
+            h4{
+                a{
                     font-size: 18px;
-                    font-weight: 700;
-                    font-family: $heading-font;
-                }
-
-                .progress-value {
-                    margin-bottom: 10px;
-                    //margin-top: -0.5em;
-                    color: $header-color;
-                    text-transform: capitalize;
-                }
-                .progress {
-                    position: relative;
-                    height: 10px;
-                    background-color: $bg-color;
-                    border-radius: 0;
-                    overflow: visible;
-                    margin-top: 15px;
-                }
-            
-                .progress-bar {
-                    background-color: $theme-color;
-                    height: 10px;
-                    margin: 0;
-                    border-radius: inherit;
-                    overflow: visible;
-                    position: relative;
-                    margin-top: 0;
-                }
-                .progress-value {
-                    position: absolute;
-                    top: -38px;
-                    right: -8px;
-                    font-size: 18px;
-                    font-weight: 700;
-                    color: $header-color;
-                    font-family: $heading-font;
                 }
             }
         }
-    }
-
-    .skills-image {
-        margin-right: -45%;
-        position: relative;
-
-        img {
-            @include imgw;
+        @include breakpoint(max-lg){
+            padding: 26px 18px;
         }
-
-        .skill-box-shape {
-            background: $header-color;
-            padding: 44px 40px;
-            position: absolute;
-            right: 14%;
-            bottom: -7%;
-            max-width: 360px;
-
-            .icon {
-                margin-bottom: 40px;
-            }
-
-            h5 {
+	}
+	&:hover {
+		.land-content {
+			background-color: $theme-color;
+			bottom: 33px;
+			left: 33px;
+            h4,a,span{
                 color: $white;
-                margin-bottom: 10px;
-                line-height: 145%;
-                font-size: 24px;
             }
-
-            span {
-                width: 40px;
-                height: 3px;
-                background-color: $theme-color;
-                display: inline-block;
-                margin-top: 5px;
-            }
-        }
-    }
+		}
+	}
 }
-
-.company-skills-section {
-    position: relative;
-    z-index: 9;
-
-    &::before {
-        @include before;
-        background-color: $bg-color;
-        width: 84%;
-        left: 8px;
-    }
-
-    .line-shape {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-}
-
-.feature-wrapper {
-    @include flex;
-    justify-content: space-between;
-
-    .feature-items {
-        display: flex;
-        gap: 28px;
-
-        &:not(:last-child) {
-            border-right: 1px solid $border-color;
-            padding-right: 10px;
-            margin-right: 30px;
-        }
-
-        .content {
-            h3 {
-                font-size: 24px;
-                text-transform: uppercase;
-                margin-bottom: 10px;
-            }
-    
-            p {
-                font-size: 20px;
-            }
-        }
-    }
-}
+//Land Feature
