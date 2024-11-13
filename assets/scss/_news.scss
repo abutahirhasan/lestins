@@ -1,59 +1,92 @@
 .news-box-items {
-    transition: all 0.5s;
-    .news-image{
-        width: 100%;
-        img{
-            width: 100%;
-        }
-        .date-badge{
-            position: absolute;
-            right: 18px;
-            top: -12px;
-            width: 60px;
-            height: 64px;
-            line-height: 14px;
-            font-weight: 500;
-            text-transform: uppercase;
-            z-index: 1;
-            &::before{
-                position: absolute;
-                left: -14px;
-                top: 0;
-                width: 19px;
-                height: 12px;
-                content: "";
-                background: $theme-color;
-                clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+	transition: all 0.5s;
+	.news-image {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+		.date-badge {
+			position: absolute;
+			right: 18px;
+			top: -12px;
+			width: 60px;
+			height: 64px;
+			line-height: 14px;
+			font-weight: 500;
+			text-transform: uppercase;
+			z-index: 1;
+			&::before {
+				position: absolute;
+				left: -14px;
+				top: 0;
+				width: 19px;
+				height: 12px;
+				content: "";
+				background: $theme-color;
+				clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			}
+		}
+	}
+	.news-content {
+		border-radius: 5px;
+		background-color: rgb(245, 245, 245);
+		padding: 24px 36px;
+		.comment-blog {
+			position: relative;
+			box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+			.blog-arrow {
+				&:hover {
+					i {
+						color: $theme-color;
+					}
+					color: $theme-color;
+				}
+			}
+			@include breakpoint(lg) {
+				margin-bottom: -50px;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.news-content {
+			padding: 20px 16px;
+		}
+	}
+	&:hover {
+		transform: translateY(-8px);
+	}
+}
 
-            }
-        }
-    }
-    .news-content{
-        border-radius: 5px;
+//News Section 3
+.news-section3 {
+	position: relative;
+	z-index: 1;
+    padding-top: 90px;
+	&::before {
+		position: absolute;
+        top: 0;
+		right: 0;
+        width: 932px;
+		height: 100%;
+		content: "";
+		z-index: -1;
         background-color: rgb(245, 245, 245);
-        padding: 24px 36px;
-        .comment-blog{
-            position: relative;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            .blog-arrow{
-                &:hover{
-                    i{
-                        color: $theme-color;
-                    }
-                    color: $theme-color;
-                }
-            }
-            @include breakpoint(lg){
-                margin-bottom: -50px;
+	}
+    .slide-cmn{
+        background-color: rgb(245, 245, 245);
+        border-radius: 50% !important;
+        i{
+            color: $text-color;
+        }
+        &.active{
+            background: $theme-color;
+            i{
+                color: $white;
             }
         }
     }
-    @include breakpoint(max-xl){
-        .news-content{
-            padding: 20px 16px;
-        }
-    }
-    &:hover{
-        transform: translateY(-8px);
-    }
+}
+
+.news-slider-maintain{
+    margin-left: 300px;
 }

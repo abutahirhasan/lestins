@@ -1,0 +1,53 @@
+//Pricing Section
+.pricing-section {
+	position: relative;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 575px;
+		content: "";
+		width: 100%;
+		background: url(../../assets/img/element/pricing-bg.png) no-repeat center
+			center;
+		background-size: cover;
+		z-index: -1;
+	}
+}
+.pricing-items {
+    background-color: rgb(255, 255, 255);
+    box-shadow: -10px 0px 60px 0px rgba(0, 0, 0, 0.07);
+    z-index: 1;
+    transition: all 0.4s;
+    .price-head{
+        position: relative;
+        background: $theme-color;
+        padding: 50px 20px;
+        overflow: hidden;
+        z-index: 1;
+        .pricing-shape{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 8px;
+            z-index: -1;
+        }
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        background-color: rgb(213, 213, 213);
+    }
+    &.premium{
+        .theme-btn{
+            background: $theme-color;
+        }
+    }
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+//Pricing Section

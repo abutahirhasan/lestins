@@ -235,6 +235,46 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//BLog -News SLide
+		const blogNewsWrapper3 = new Swiper(".blog-news-wrapper3", {
+			spaceBetween: 24,
+			speed: 2000,
+			loop: true,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				prevEl: ".array-next",
+				nextEl: ".array-prev",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				991: {
+					slidesPerView: 2,
+					spaceBetween: 16,
+				},
+				767: {
+					slidesPerView: 2,
+					spaceBetween: 16,
+				},
+				575: {
+					slidesPerView: 1,
+					spaceBetween: 16,
+				},
+				400: {
+					slidesPerView: 1,
+					spaceBetween: 16,
+				},
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 16,
+				},
+			},
+		});
+
 		//Testimonial Slide2
 		const testimonialWrapper2 = new Swiper(".testimonial-wrapper2", {
 			spaceBetween: 24,

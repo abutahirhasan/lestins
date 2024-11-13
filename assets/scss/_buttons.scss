@@ -28,6 +28,16 @@
             color: $black;
 		}
 	}
+	&.alt-btn2 {
+		background-color: $black;
+		&:hover {
+			&::after,
+			&::before {
+				background-color: $theme-color;
+			}
+            color: $black;
+		}
+	}
 
 	&::after,
 	&::before {
