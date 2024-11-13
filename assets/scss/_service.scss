@@ -402,7 +402,7 @@
 		.discover-separ-item {
 			width: 20%;
 			padding: 5px;
-			.box{
+			.box {
 				padding: 24px 18px;
 			}
 		}
@@ -411,7 +411,7 @@
 		.discover-separ-item {
 			width: 33.33%;
 			padding: 5px;
-			.box{
+			.box {
 				padding: 24px 18px;
 			}
 		}
@@ -420,7 +420,7 @@
 		.discover-separ-item {
 			width: 50%;
 			padding: 5px;
-			.box{
+			.box {
 				padding: 24px 18px;
 			}
 		}
@@ -429,7 +429,7 @@
 		.discover-separ-item {
 			width: 100%;
 			padding: 5px;
-			.box{
+			.box {
 				padding: 24px 18px;
 			}
 		}
@@ -438,10 +438,65 @@
 //Discover
 
 //Watch Style
-.watch-section{
-	background: url(../../assets/img/project/watch-bg.png) no-repeat center center;
+.watch-section {
+	background: url(../../assets/img/project/watch-bg.png) no-repeat center
+		center;
 	background-size: cover;
 	padding: 0 0 120px;
 	background-attachment: fixed;
+	z-index: 1;
+	.watch-content {
+		z-index: 1;
+		position: relative;
+		.watch-icon {
+			width: 164px;
+			height: 164px;
+			display: block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 24px;
+			background: $theme-color;
+			border-radius: 0 0 100px 100px;
+			i {
+				font-size: 24px;
+				color: $white;
+			}
+		}
+		.text-line {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+	}
+	@include breakpoint(max-md) {
+		padding: 0 0 80px;
+		.watch-content {
+			z-index: 1;
+			position: relative;
+			.watch-icon {
+				width: 124px;
+				height: 124px;
+				display: block;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 24px;
+				background: $theme-color;
+				border-radius: 0 0 100px 100px;
+				i {
+					font-size: 24px;
+					color: $white;
+				}
+			}
+			.text-line {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
+		}
+	}
 }
 //Watch Style

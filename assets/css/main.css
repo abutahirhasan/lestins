@@ -4097,6 +4097,62 @@ span {
   background-size: cover;
   padding: 0 0 120px;
   background-attachment: fixed;
+  z-index: 1;
+}
+.watch-section .watch-content {
+  z-index: 1;
+  position: relative;
+}
+.watch-section .watch-content .watch-icon {
+  width: 164px;
+  height: 164px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  background: var(--theme);
+  border-radius: 0 0 100px 100px;
+}
+.watch-section .watch-content .watch-icon i {
+  font-size: 24px;
+  color: var(--white);
+}
+.watch-section .watch-content .text-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .watch-section {
+    padding: 0 0 80px;
+  }
+  .watch-section .watch-content {
+    z-index: 1;
+    position: relative;
+  }
+  .watch-section .watch-content .watch-icon {
+    width: 124px;
+    height: 124px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    background: var(--theme);
+    border-radius: 0 0 100px 100px;
+  }
+  .watch-section .watch-content .watch-icon i {
+    font-size: 24px;
+    color: var(--white);
+  }
+  .watch-section .watch-content .text-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 .what-wedo-wrap {
