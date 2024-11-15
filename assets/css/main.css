@@ -4417,6 +4417,58 @@ span {
   }
 }
 
+.authentic-item {
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.authentic-item::before {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  content: "";
+  border-radius: 5px;
+  background-color: rgb(213, 213, 213);
+  width: 80%;
+  height: 60%;
+  transition: all 0.4s;
+}
+.authentic-item .cont {
+  margin-top: -18px;
+  position: relative;
+  z-index: 1;
+}
+.authentic-item .cont .social-share .share {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: var(--theme);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.authentic-item .cont .social-share .share i {
+  color: var(--white);
+}
+.authentic-item .cont .social-share .share:hover .social-area {
+  transform: translateX(-50%) rotateX(0deg);
+}
+.authentic-item .cont .social-share .social-area {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%) rotateX(90deg);
+  transition: all 0.4s;
+}
+.authentic-item:hover {
+  transform: translateY(5px);
+}
+.authentic-item:hover::before {
+  background: var(--theme);
+}
+
 .what-wedo-wrap {
   z-index: 1;
   position: relative;
