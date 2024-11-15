@@ -705,3 +705,45 @@
 		}
 	}
 }
+
+//Breadcrumb
+.breadcrumb-section {
+	background: url(../../assets/img/hero/breadcrumnd-banner.png) no-repeat center center;
+	background-size: cover;
+	padding: 208px 0 108px;
+	position: relative;
+	z-index: 1;
+	.breadcrumb-content{
+		h2{
+			margin-bottom: 16px;
+			color: $white;
+		}
+		.bread-list{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 16px;
+			li,a{
+				font-size: 14px;
+				font-weight: 600;
+			}
+		}
+	}
+	&::before{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: rgba(0, 0, 0, 0.1);
+		z-index: -1;
+	}
+	@include breakpoint(max-lg){
+		padding: 170px 0 100px;
+	}
+	@include breakpoint(max-md){
+		padding: 130px 0 75px;
+	}
+}
+//Breadcrumb
