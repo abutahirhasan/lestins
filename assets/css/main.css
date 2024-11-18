@@ -3929,6 +3929,55 @@ span {
   }
 }
 
+.blog-rightbar {
+  gap: 30px;
+}
+.blog-rightbar form input {
+  width: 100%;
+  height: 55px;
+  background: transparent;
+  border: unset;
+  font-size: 18px;
+  color: var(--white);
+}
+.blog-rightbar form input::placeholder {
+  color: var(--white);
+}
+.blog-rightbar form i {
+  color: var(--white);
+}
+.blog-rightbar .lastes-post {
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+  padding: 40px 30px;
+}
+.blog-rightbar .lastes-post .lates-link li {
+  background: var(--white);
+  border-radius: 5px;
+  padding: 15px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+@media (max-width: 1199px) {
+  .blog-rightbar .lastes-post {
+    padding: 30px 18px;
+  }
+  .blog-rightbar .lastes-post .lates-link li {
+    background: var(--white);
+    border-radius: 5px;
+    padding: 15px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .blog-rightbar .lastes-post .lates-link li a {
+    line-height: 21px;
+    display: block;
+    font-size: 16px;
+  }
+}
+
 .pricing-section {
   position: relative;
   z-index: 1;
