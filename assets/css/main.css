@@ -1751,6 +1751,11 @@ span {
   visibility: hidden;
   padding: 20px 20px 20px 20px;
 }
+@media (min-width: 1200px) {
+  .header-main .main-menu ul li .has-homemenu {
+    width: 746px;
+  }
+}
 .header-main .main-menu ul li .has-homemenu .homemenu-items {
   display: flex;
   align-items: center;
@@ -1768,6 +1773,10 @@ span {
 }
 .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb {
   position: relative;
+  width: 100%;
+  max-width: 220px;
+}
+.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb img {
   width: 100%;
 }
 .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button {
