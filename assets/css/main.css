@@ -1539,13 +1539,13 @@ span {
   color: var(--white);
 }
 .header-top-section .header-top-wrapper .contact-list li i {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--theme);
 }
-.header-top-section .header-top-wrapper .social-related A,
+.header-top-section .header-top-wrapper .social-related a,
 .header-top-section .header-top-wrapper .social-related span {
   font-size: 13px;
-  color: #dbdbdb;
+  color: #838383;
 }
 .header-top-section .header-top-wrapper .social-wrapper a i {
   font-size: 16px;
@@ -1656,7 +1656,7 @@ span {
   font-size: 16px;
   font-weight: 600;
   color: var(--white);
-  padding: 16px 0;
+  padding: 14px 0;
   text-align: left;
   font-family: "Manrope", sans-serif;
   position: relative;
@@ -1801,6 +1801,7 @@ span {
   font-size: 14px;
   text-align: center;
   border-radius: 0;
+  justify-content: center !important;
 }
 .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button .theme-btn:hover {
   color: var(--white) !important;
@@ -1980,7 +1981,7 @@ span {
   top: 0;
   width: 100%;
   z-index: 9;
-  padding-top: 60px;
+  padding-top: 53px;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 }
@@ -2790,6 +2791,13 @@ span {
   }
 }
 
+.my-custom-hero .hero-content {
+  position: relative;
+  opacity: 1;
+  z-index: 3;
+  transform: translateY(0px);
+}
+
 .browse-hilisht {
   display: flex;
   align-items: center;
@@ -3385,6 +3393,9 @@ span {
   transition: all 0.4s;
   animation: scsl2 3s linear infinite;
 }
+.listin-left-content .review-pop:hover {
+  background-color: var(--header);
+}
 @media (max-width: 1199px) {
   .listin-left-content .review-pop {
     width: 50px;
@@ -3842,6 +3853,9 @@ span {
     margin-bottom: -50px;
   }
 }
+.news-box-items .news-content h4 a:hover {
+  color: var(--theme);
+}
 @media (max-width: 1199px) {
   .news-box-items .news-content {
     padding: 20px 16px;
@@ -4161,6 +4175,9 @@ span {
 
 .offer-content .theme-btn {
   background: var(--black);
+}
+.offer-content .theme-btn::after, .offer-content .theme-btn::before {
+  background-color: var(--theme);
 }
 .offer-content .connect-line {
   background-color: rgb(213, 213, 213);
@@ -4582,6 +4599,9 @@ span {
   width: 35px;
   height: 11px;
 }
+.discover-cate-item .discover-text:hover {
+  color: var(--theme);
+}
 .discover-cate-item.active, .discover-cate-item:hover {
   transform: translateY(4px) scale(1.02);
 }
@@ -4640,6 +4660,9 @@ span {
   width: 1px;
   background: var(--indef);
   height: 16px;
+}
+.business-single .business-content h4 a:hover {
+  color: var(--theme);
 }
 .business-single .business-content .business-info li {
   display: flex;
@@ -4951,6 +4974,9 @@ span {
 .watch-section .watch-content .watch-icon i {
   font-size: 24px;
   color: var(--white);
+}
+.watch-section .watch-content .watch-icon:hover {
+  background-color: var(--header);
 }
 .watch-section .watch-content .text-line {
   position: absolute;

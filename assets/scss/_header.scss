@@ -24,16 +24,16 @@
 					}
 				}
 				i {
-					font-size: 16px;
+					font-size: 14px;
 					color: $theme-color;
 				}
 			}
 		}
 		.social-related {
-			A,
+			a,
 			span {
 				font-size: 13px;
-				color: #dbdbdb;
+				color: #838383;
 			}
 		}
 		.social-wrapper {
@@ -161,7 +161,7 @@
 					font-size: 16px;
 					font-weight: 600;
 					color: $white;
-					padding: 16px 0;
+					padding: 14px 0;
 					text-align: left;
 					font-family: $body-font;
 					position: relative;
@@ -305,6 +305,7 @@
 									visibility: hidden;
 									@include transition;
 									margin-top: 20px;
+									
 									.theme-btn {
 										padding: 14px 20px;
 										color: $white !important;
@@ -312,6 +313,7 @@
 										font-size: 14px;
 										text-align: center;
 										border-radius: 0;
+										justify-content: center !important;
 
 										&:hover {
 											color: $white !important;
@@ -517,7 +519,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 9;
-		padding-top: 60px;
+		padding-top: 53px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0);
 		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 		.container {

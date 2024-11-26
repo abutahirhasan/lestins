@@ -283,7 +283,14 @@
 		}
 	}
 }
-
+.my-custom-hero {
+	.hero-content {
+		position: relative;
+		opacity: 1;
+		z-index: 3;
+		transform: translateY(-0px);
+	}
+}
 .browse-hilisht {
 	display: flex;
 	align-items: center;
@@ -910,6 +917,9 @@
 		&::after {
 			transition: all 0.4s;
 			animation: scsl2 3s linear infinite;
+		}
+		&:hover {
+			background-color: $header-color;
 		}
 		@include breakpoint(max-xl) {
 			width: 50px;

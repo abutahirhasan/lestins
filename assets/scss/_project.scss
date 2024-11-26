@@ -26,6 +26,10 @@
 .offer-content {
 	.theme-btn {
 		background: $black;
+
+		&::after,&::before {
+			background-color: $theme-color;
+		}
 	}
 	.connect-line {
 		background-color: rgb(213, 213, 213);

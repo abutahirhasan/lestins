@@ -69,6 +69,10 @@
 			width: 35px;
 			height: 11px;
 		}
+
+		&:hover {
+			color: $theme-color;
+		}
 	}
 	&.active,
 	&:hover {
@@ -131,6 +135,14 @@
 				width: 1px;
 				background: $indef;
 				height: 16px;
+			}
+		}
+
+		h4 {
+			a {
+				&:hover {
+					color: $theme-color;
+				}
 			}
 		}
 		.business-info {
@@ -461,6 +473,10 @@
 			i {
 				font-size: 24px;
 				color: $white;
+			}
+
+			&:hover {
+				background-color: $header-color;
 			}
 		}
 		.text-line {

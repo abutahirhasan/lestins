@@ -378,76 +378,31 @@ CSS TABLE OF CONTENTS
 		});
 	}); // End Document Ready Function
 
-	//Price Range Slideer
-	document.addEventListener("DOMContentLoaded", function () {
-		const minSlider = document.getElementById("min-slider");
-		const maxSlider = document.getElementById("max-slider");
-		const amount = document.getElementById("amount");
-
-		function updateAmount() {
-			const minValue = parseInt(minSlider.value, 10);
-			const maxValue = parseInt(maxSlider.value, 10);
-
-			// Ensure the minimum value is always lower than the maximum value
-			if (minValue > maxValue) {
-				minSlider.value = maxValue;
-			}
-
-			// Update the displayed price range
-			amount.value = "$" + minSlider.value + " - $" + maxSlider.value;
-
-			// Calculate the percentage positions of the sliders
-			const minPercent =
-				((minSlider.value - minSlider.min) /
-					(minSlider.max - minSlider.min)) *
-				100;
-			const maxPercent =
-				((maxSlider.value - maxSlider.min) /
-					(maxSlider.max - maxSlider.min)) *
-				100;
-
-			// Update the background gradient to show the active track color
-			minSlider.style.background = `linear-gradient(to right, #000 ${minPercent}%, #ff5722 ${minPercent}%, #ff5722 ${maxPercent}%, #000 ${maxPercent}%)`;
-			maxSlider.style.background = `linear-gradient(to right, #000 ${minPercent}%, #ff5722 ${minPercent}%, #ff5722 ${maxPercent}%, #000 ${maxPercent}%)`;
-		}
-
-		// Initialize the sliders and track with default values
-		amount && updateAmount();
-
-		// if (minSlider && maxSlider) {
-
-		// Add event listeners for both sliders
-		minSlider && minSlider.addEventListener("input", updateAmount);
-		maxSlider && maxSlider.addEventListener("input", updateAmount);
-		// }
-	});
-
-	//Cart Increment Decriemnt
 
 	// quntity increment and decrement
-	const quantityIncrement = document.querySelectorAll(".quantityIncrement");
-	const quantityDecrement = document.querySelectorAll(".quantityDecrement");
-	if (quantityIncrement && quantityDecrement) {
-		quantityIncrement.forEach((increment) => {
-			increment.addEventListener("click", function () {
-				const value = parseInt(
-					increment.parentElement.querySelector("input").value
-				);
-				increment.parentElement.querySelector("input").value = value + 1;
-			});
-		});
+	// const quantityIncrement = document.querySelectorAll(".quantityIncrement");
+	// const quantityDecrement = document.querySelectorAll(".quantityDecrement");
+	// if (quantityIncrement && quantityDecrement) {
+	// 	quantityIncrement.forEach((increment) => {
+	// 		increment.addEventListener("click", function () {
+	// 			const value = parseInt(
+	// 				increment.parentElement.querySelector("input").value
+	// 			);
+	// 			increment.parentElement.querySelector("input").value = value + 1;
+	// 		});
+	// 	});
 
-		quantityDecrement.forEach((decrement) => {
-			decrement.addEventListener("click", function () {
-				const value = parseInt(
-					decrement.parentElement.querySelector("input").value
-				);
-				if (value > 1) {
-					decrement.parentElement.querySelector("input").value = value - 1;
-				}
-			});
-		});
-	}
+	// 	quantityDecrement.forEach((decrement) => {
+	// 		decrement.addEventListener("click", function () {
+	// 			const value = parseInt(
+	// 				decrement.parentElement.querySelector("input").value
+	// 			);
+	// 			if (value > 1) {
+	// 				decrement.parentElement.querySelector("input").value = value - 1;
+	// 			}
+	// 		});
+	// 	});
+	// }
 
 	function loader() {
 		$(window).on("load", function () {

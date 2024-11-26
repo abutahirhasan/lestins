@@ -46,6 +46,14 @@
 				margin-bottom: -50px;
 			}
 		}
+
+		h4 {
+			a {
+				&:hover {
+					color: $theme-color;
+				}
+			}
+		}
 	}
 	@include breakpoint(max-xl) {
 		.news-content {
