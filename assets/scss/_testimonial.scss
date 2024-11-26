@@ -28,8 +28,10 @@
 	}
 }
 .los-angels-wrap {
+	margin-left: 80px;
 	.container {
-		max-width: 1376px;
+		max-width: 1396px;
+		margin: 0 auto;
 	}
 }
 //Testimonial Css
@@ -119,6 +121,7 @@
 	background: url(../../assets/img/project/fun-fact.png) no-repeat center
 		center;
 	background-size: cover;
+	background-attachment: fixed;
 	padding: 90px 0;
 }
 .funfact-content {
@@ -133,6 +136,18 @@
 				width: 60px;
 				height: 60px;
 				min-width: 60px;
+				transition: all 0.4s;
+				i{
+					transition: all 0.4s;
+				}
+			}
+			&:hover{
+				.icon{
+					background: $white;
+					i{
+						color: $black;
+					}
+				}
 			}
 		}
 	}

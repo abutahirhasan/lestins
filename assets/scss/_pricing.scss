@@ -48,6 +48,9 @@
     }
     &:hover{
         transform: scale(1.05);
+        .theme-btn{
+            color: $white;
+        }
     }
 }
 //Pricing Section

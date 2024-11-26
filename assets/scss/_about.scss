@@ -70,6 +70,41 @@
 	}
 }
 //App Section
+.app-store-btn {
+	button {
+		width: 233px;
+		height: 73px;
+		transition: all 0.4s;
+		img {
+			max-width: 155px;
+			object-fit: contain;
+			transition: all 0.4s;
+		}
+		&:first-child {
+			background: $theme-color;
+			&:hover {
+				background: $white;
+				img {
+					filter: brightness(0);
+				}
+			}
+		}
+		&:last-child {
+			background: $white;
+			&:hover {
+				background: $theme-color;
+				img {
+					filter: brightness(25);
+				}
+			}
+		}
+		@include breakpoint(max-lg) {
+			width: 233px;
+			height: 63px;
+			padding: 10px 16px;
+		}
+	}
+}
 
 //User Items
 .user-items {

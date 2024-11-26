@@ -67,7 +67,7 @@
 			}
 		}
 	}
-	.container{
+	.container {
 		max-width: 1475px;
 		margin: 0 auto;
 	}
@@ -85,19 +85,30 @@
 			width: 45px;
 			height: 50px;
 			background: #ba092a;
+			transition: all 0.4s;
 		}
 		.texts {
-			padding: 3px 20px 3px 16px;
+			padding: 3px 20px 6px 16px;
 			font-weight: 700;
 			font-size: 14px;
-			letter-spacing: 1px;
+		}
+		&:hover{
+			.plus{
+				background: #9e0622;
+			}
 		}
 	}
 	.custom-dropdown {
 		.dropdown-button {
 			i {
-				font-size: 28px;
+				font-size: 24px;
+				transition: all 0.4s;
 				color: var(--white);
+			}
+			&:hover{
+				i{
+					color: $theme-color;
+				}
 			}
 		}
 	}
@@ -174,7 +185,7 @@
 					}
 
 					&:hover {
-						color: $theme-color-2 !important;
+						color: $white !important;
 					}
 				}
 				.submenu {
@@ -271,7 +282,7 @@
 					left: 0px;
 					visibility: hidden;
 					padding: 20px 20px 20px 20px;
-					@include breakpoint(xl){
+					@include breakpoint(xl) {
 						width: 746px;
 					}
 					.homemenu-items {
@@ -288,7 +299,7 @@
 								position: relative;
 								width: 100%;
 								max-width: 220px;
-								img{
+								img {
 									width: 100%;
 								}
 								.demo-button {
@@ -305,7 +316,7 @@
 									visibility: hidden;
 									@include transition;
 									margin-top: 20px;
-									
+
 									.theme-btn {
 										padding: 14px 20px;
 										color: $white !important;
@@ -527,41 +538,41 @@
 			margin: 0 auto;
 		}
 	}
-	&.header-version2{
+	&.header-version2 {
 		padding-top: 0;
 		padding: 25px 0;
 		border: unset !important;
 		box-shadow: none !important;
-		&.sticky{
+		&.sticky {
 			padding: 0 0;
 		}
 	}
-	&.header-version3{
-		&.sticky{
+	&.header-version3 {
+		&.sticky {
 			background: $white;
 		}
-		.dropdown-button{
-			i{
+		.dropdown-button {
+			i {
 				color: $black;
 			}
 		}
-		.sidebar__toggle{
-			i{
+		.sidebar__toggle {
+			i {
 				color: $black !important;
 			}
 		}
-		@include breakpoint(xl){
-			.main-menu{
-				ul{
-					li{
-						a{
+		@include breakpoint(xl) {
+			.main-menu {
+				ul {
+					li {
+						a {
 							color: $black;
 						}
 					}
 				}
 			}
 		}
-		@include breakpoint(max-xl){
+		@include breakpoint(max-xl) {
 			background: $white;
 		}
 	}
@@ -613,7 +624,18 @@
 		background: var(--header);
 	}
 }
-
+.header-color2 {
+	.header-right {
+		.main-menu {
+			ul {
+				li,
+				a {
+					color: #978f90;
+				}
+			}
+		}
+	}
+}
 
 //>>>>> Offcanvas Start <<<<<//
 .fix-area {
@@ -659,11 +681,11 @@
 	height: 100%;
 	padding: 30px 30px;
 	.offcanvas__content {
-		.offcanvas__logo{
-			a{
+		.offcanvas__logo {
+			a {
 				max-width: 120px;
 				display: block;
-				img{
+				img {
 					width: 100%;
 				}
 			}

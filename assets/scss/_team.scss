@@ -33,6 +33,7 @@
 				}
 				margin: 0 auto 20px;
 				&:hover{
+					cursor: pointer;
 					.social-area{
 						transform: translateX(-50%) rotateX(0deg);
 					}
@@ -82,6 +83,9 @@
 		width: 61px;
 		height: 61px;
 		border: 5px solid $white;
+		img{
+			width: 22px;
+		}
 	}
 	.ele-badge1 {
 		right: -120px;
@@ -91,7 +95,6 @@
 	.ele-badge2 {
 		right: 30%;
 		top: 22px;
-		animation: updowns 2s linear infinite;
 	}
 	.ele-badge3 {
 		right: 40%;

@@ -277,6 +277,14 @@
 		img {
 			transition: all 0.5s;
 		}
+		&:hover {
+			filter: brightness(1.75);
+			img {
+				filter: brightness(1.75);
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
 	}
 	.swiper-slide.swiper-slide-active {
 		.step-sponsor {
@@ -327,9 +335,13 @@
 		height: 155px;
 		background: rgb(213, 213, 213);
 		border-bottom-left-radius: 150px;
+		transition: all 0.4s;
 	}
 	&:hover {
 		border-color: $theme-color;
+		.badge-ele {
+			background: $theme-color;
+		}
 	}
 	@include breakpoint(max-xl) {
 		.badge-ele {
@@ -454,7 +466,8 @@
 	background: url(../../assets/img/project/watch-bg.png) no-repeat center
 		center;
 	background-size: cover;
-	padding: 0 0 120px;
+	background-attachment: fixed;
+	padding: 0 0 140px;
 	background-attachment: fixed;
 	z-index: 1;
 	.watch-content {
@@ -481,9 +494,14 @@
 		}
 		.text-line {
 			position: absolute;
-			top: 0;
-			left: 0;
+			top: 15px;
+			left: -4px;
 			z-index: -1;
+		}
+		@include breakpoint(xl) {
+			h2 {
+				font-size: 60px;
+			}
 		}
 	}
 	@include breakpoint(max-md) {

@@ -11,13 +11,11 @@
 	color: $white;
 	font-size: 14px;
 	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
 	line-height: 1;
-	padding: 23px 36px;
+	padding: 19px 28px;
 	overflow: hidden;
 	align-items: center;
-	font-family: "Expose", sans-serif;
+	font-family: "Manrope", sans-serif;
 	&.alt-btn {
 		background-color: $black;
 		&:hover {
