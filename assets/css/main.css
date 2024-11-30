@@ -205,6 +205,15 @@ Version: 1.0.0
 .theme-btn.alt-btn2:hover::after, .theme-btn.alt-btn2:hover::before {
   background-color: var(--theme);
 }
+.theme-btn.alt-btn03 {
+  transition: all 0.4s;
+}
+.theme-btn.alt-btn03:hover {
+  color: var(--black);
+}
+.theme-btn.alt-btn03:hover::after, .theme-btn.alt-btn03:hover::before {
+  background-color: var(--white);
+}
 .theme-btn::after, .theme-btn::before {
   content: "";
   display: block;
@@ -866,6 +875,10 @@ span {
   padding-bottom: 45px;
 }
 
+.swiper-3d-section {
+  position: relative;
+  z-index: 1;
+}
 .swiper-3d-section .container {
   max-width: 1500px;
   margin: 0 auto;
@@ -879,6 +892,43 @@ span {
 }
 .swiper-3d-section .card3d-content span {
   margin: 0 auto;
+}
+.swiper-3d-section .slide-cmn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.swiper-3d-section .swiper3d-btn-grp {
+  width: 100%;
+  justify-content: space-between;
+  z-index: 9;
+}
+.swiper-3d-section .swiper3d-btn-grp .swiper-3d-button-prev {
+  position: absolute;
+  left: 10%;
+  top: 56%;
+  z-index: 9;
+}
+.swiper-3d-section .swiper3d-btn-grp .swiper-3d-button-next {
+  position: absolute;
+  right: 10%;
+  top: 56%;
+  z-index: 9;
+}
+@media (max-width: 1399px) {
+  .swiper-3d-section .swiper3d-btn-grp {
+    width: initial;
+    justify-content: center;
+    z-index: 9;
+    margin-top: 30px;
+  }
+  .swiper-3d-section .swiper3d-btn-grp .swiper-3d-button-prev {
+    position: initial;
+  }
+  .swiper-3d-section .swiper3d-btn-grp .swiper-3d-button-next {
+    position: initial;
+  }
 }
 
 .swiper-3d-section .swiper-3d-container {
@@ -1919,6 +1969,18 @@ span {
   font-size: 28px;
 }
 
+@media screen and (min-width: 1850px) {
+  .container.container-header-top {
+    margin-left: 225px !important;
+    max-width: 1600px !important;
+  }
+}
+
+.container.container-extra-header {
+  max-width: 1740px !important;
+  margin: 0 auto !important;
+}
+
 .header-1 .mega-menu-wrapper {
   border-radius: 100px;
 }
@@ -2633,6 +2695,11 @@ span {
   color: var(--theme);
   display: block;
 }
+.hero-1 .hero-content h1 span .lines-elee {
+  position: absolute;
+  right: -50px;
+  top: -15px;
+}
 .hero-1 .hero-content .listing-search-form {
   padding: 20px 20px;
   margin-bottom: 30px;
@@ -2669,6 +2736,7 @@ span {
 .hero-1 .hero-content .listing-search-form .search-wrap .search-form-main .theme-btn {
   font-size: 15px;
   letter-spacing: 1px;
+  padding-bottom: 21px !important;
 }
 .hero-1 .hero-content .listing-search-form .search-wrap .category-select {
   width: 285px;
@@ -2690,6 +2758,9 @@ span {
   font-size: 14px;
   font-weight: 400;
   color: var(--text);
+}
+.hero-1 .hero-content .listing-search-form .search-wrap .nice-select::after {
+  border-color: rgb(120, 120, 120);
 }
 .hero-1 .hero-content .browse-hilisht {
   display: flex;
@@ -3434,12 +3505,13 @@ span {
   font-size: 14px;
   border: unset;
   margin-bottom: 10px;
+  color: rgb(131, 130, 130);
 }
 
 .listin-left-content .line {
   width: 100%;
   height: 1px;
-  background-color: rgb(213, 213, 213);
+  background-color: #e2dfeb;
 }
 .listin-left-content .review-pop {
   position: absolute;
@@ -5259,14 +5331,14 @@ span {
 .what-wedo-wrap .ele-badge2,
 .what-wedo-wrap .ele-badge3 {
   position: absolute;
-  width: 61px;
-  height: 61px;
+  width: 81px;
+  height: 81px;
   border: 5px solid var(--white);
 }
 .what-wedo-wrap .ele-badge1 img,
 .what-wedo-wrap .ele-badge2 img,
 .what-wedo-wrap .ele-badge3 img {
-  width: 22px;
+  width: 28px;
 }
 .what-wedo-wrap .ele-badge1 {
   right: -120px;
@@ -5353,6 +5425,7 @@ span {
   border-radius: 8px;
   z-index: 1;
   overflow: hidden;
+  box-shadow: -10px 0px 60px 0px rgba(0, 0, 0, 0.07);
 }
 .testimonail-items .thumb {
   border: 2px solid var(--theme);

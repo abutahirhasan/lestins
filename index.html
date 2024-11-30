@@ -42,7 +42,7 @@
 
     <!-- Header Top Section Start -->
     <div class="header-top-section d-md-block d-none overflow-hidden">
-        <div class="container">
+        <div class="container container-header-top">
             <div class="header-top-wrapper">
                 <ul class="contact-list">
                     <li>
@@ -156,7 +156,7 @@
 
     <!-- Header Section Start -->
     <header id="header-sticky" class="header-1 header-style2">
-        <div class="container">
+        <div class="container container-extra-header">
             <div class="mega-menu-wrapper">
                 <div class="header-main style-2">
                     <div class="header-left">
@@ -310,13 +310,22 @@
                             <div class="hero-content">
                                 <h1 class="text-center">
                                     <span class="discover">Discover</span>
-                                    <span>your amazing city</span>
+                                    <span class="position-relative">
+                                        your amazing city
+                                        <img src="assets/img/element/lines-ele.png" alt="img"
+                                            class="lines-elee d-sm-block d-none">
+                                    </span>
                                 </h1>
                                 <div class="listing-search-form">
                                     <div class="search-wrap">
                                         <form class="search-form-main" action="#0" role="search">
                                             <input type="text" class="search-first"
-                                                placeholder="Looking for shopping, restaurant...">
+                                                placeholder="What are you looking for?">
+                                            <div
+                                                class="category-select d-flex justify-content-between align-items-center">
+                                                <input type="text" placeholder="Location (e.g. New York)">
+                                                <i class="fa-solid fa-location-pin"></i>
+                                            </div>
                                             <div class="category-select">
                                                 <select name="category">
                                                     <option value="">All Categories</option>
@@ -328,14 +337,10 @@
                                                     <option class="level-0" value="38">Traveling</option>
                                                 </select>
                                             </div>
-                                            <div
-                                                class="category-select d-flex justify-content-between align-items-center">
-                                                <input type="text" placeholder="Location (e.g. New York)">
-                                                <i class="fa-solid fa-location-dot"></i>
-                                            </div>
+
                                             <button type="button"
-                                                class="theme-btn fw-normal text-capitalize gap-2 py-3 px-6">
-                                                <i class="fa-solid fa-magnifying-glass"></i> Search
+                                                class="theme-btn rounded-2 fw-bold text-capitalize gap-2">
+                                                Search Now
                                             </button>
                                         </form>
                                     </div>
@@ -862,7 +867,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 position-relative wow fadeInUp" data-wow-delay=".5s">
-                        <div class="step-shape step-shape-lst"><img src="assets/img/project/step-shape.png" alt="img"></div>
+                        <div class="step-shape step-shape-lst"><img src="assets/img/project/step-shape.png" alt="img">
+                        </div>
                         <div class="step-items text-center">
                             <div class="step-box">
                                 <div class="icon mb-3">
@@ -955,7 +961,7 @@
                         </div>
                         <div class="some-cont">
                             <span class="listing">10 Listings</span>
-                            <h4 class="white-clr">CaliDubaifornia</h4>
+                            <h4 class="white-clr">Dubai</h4>
                         </div>
                     </div>
                 </div>
@@ -1034,7 +1040,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div
-                                        class="testimonail-items rounded-0 d-flex gap-xxl-4 gap-xl-3 gap-2 position-relative">
+                                        class="testimonail-items rounded-2 d-flex gap-xxl-4 gap-xl-3 gap-2 position-relative">
                                         <div class="">
                                             <div class="thumb m-auto mb-2">
                                                 <img src="assets/img/testimonial/alessha.png" alt="img">
@@ -1067,7 +1073,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div
-                                        class="testimonail-items rounded-0 d-flex gap-xxl-4 gap-xl-3 gap-2 position-relative">
+                                        class="testimonail-items rounded-2 d-flex gap-xxl-4 gap-xl-3 gap-2 position-relative">
                                         <div class="">
                                             <div class="thumb m-auto mb-2">
                                                 <img src="assets/img/testimonial/kecin.png" alt="img">
@@ -1485,7 +1491,7 @@
                             </p>
                             <form action="#" class="subscribe-form">
                                 <input type="text" placeholder="Email Adress">
-                                <button type="button" class="theme-btn py-3 px-6 text-center">
+                                <button type="button" class="theme-btn alt-btn03 py-3 px-6 text-center">
                                     Register
                                 </button>
                             </form>

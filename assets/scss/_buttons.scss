@@ -23,7 +23,7 @@
 			&::before {
 				background-color: $white;
 			}
-            color: $black;
+			color: $black;
 		}
 	}
 	&.alt-btn2 {
@@ -33,7 +33,18 @@
 			&::before {
 				background-color: $theme-color;
 			}
-            color: $black;
+			color: $black;
+		}
+	}
+
+	&.alt-btn03 {
+		transition: all 0.4s;
+		&:hover {
+			&::after,
+			&::before {
+				background-color: $white;
+			}
+			color: $black;
 		}
 	}
 

@@ -415,6 +415,16 @@
 		}
 	}
 }
+.container.container-header-top{
+	@media screen and (min-width: 1850px) {
+		margin-left: 225px !important;
+		max-width: 1600px !important;
+	}
+}
+.container.container-extra-header{
+	max-width: 1740px !important;
+	margin: 0 auto !important;
+}
 
 .header-1 {
 	.mega-menu-wrapper {

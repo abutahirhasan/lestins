@@ -279,8 +279,11 @@
                     <div class="listing-search-form mb-0">
                         <div class="search-wrap">
                             <form class="search-form-main" action="#0" role="search">
-                                <input type="text" class="search-first"
-                                    placeholder="Looking for shopping, restaurant...">
+                                <input type="text" class="search-first" placeholder="What are you looking for?">
+                                <div class="category-select d-flex justify-content-between align-items-center">
+                                    <input type="text" placeholder="Location (e.g. New York)">
+                                    <i class="fa-solid fa-location-pin"></i>
+                                </div>
                                 <div class="category-select">
                                     <select name="category">
                                         <option value="">All Categories</option>
@@ -292,12 +295,9 @@
                                         <option class="level-0" value="38">Traveling</option>
                                     </select>
                                 </div>
-                                <div class="category-select d-flex justify-content-between align-items-center">
-                                    <input type="text" placeholder="Location (e.g. New York)">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <button type="button" class="theme-btn fw-normal text-capitalize gap-2 py-3 px-6">
-                                    <i class="fa-solid fa-magnifying-glass"></i> Search
+
+                                <button type="button" class="theme-btn rounded-2 fw-bold text-capitalize gap-2">
+                                    Search Now
                                 </button>
                             </form>
                         </div>
@@ -920,13 +920,13 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-btn-area d-center gap-6">
-                <div class="swiper-btn swiper-3d-button-prev box-style">
-                    <i class="ti ti-chevron-left fs-xl"></i>
-                </div>
-                <div class="swiper-btn swiper-3d-button-next box-style">
-                    <i class="ti ti-chevron-right fs-xl"></i>
-                </div>
+            <div class="swiper3d-btn-grp d-flex align-items-center gap-2">
+                <button type="button" class="slide-cmn d-center swiper-3d-button-prev">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </button>
+                <button type="button" class="slide-cmn d-center swiper-3d-button-next">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -1259,7 +1259,7 @@
     </section>
 
     <!-- Anyting section start -->
-    <section class="anyting-section position-relative section-padding">
+    <section class="anyting-section position-relative">
         <div class="container">
             <div class="row g-4 justify-content-lg-between justify-content-center">
                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-8">
@@ -1402,7 +1402,7 @@
                             </p>
                             <form action="#" class="subscribe-form">
                                 <input type="text" placeholder="Email Adress">
-                                <button type="button" class="theme-btn py-3 px-6 text-center">
+                                <button type="button" class="theme-btn alt-btn03 py-3 px-6 text-center">
                                     Register
                                 </button>
                             </form>
